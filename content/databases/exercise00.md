@@ -1,6 +1,5 @@
 +++
 title = "Exercise 00"
-slugify.anchors = "off"
 +++
 
 Given the sets:
