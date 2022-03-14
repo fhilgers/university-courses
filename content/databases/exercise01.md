@@ -1,6 +1,5 @@
 +++
 title = "Exercise 01"
-insert_anchor_links = "right"
 +++
 
 ### 1. Problem with data systems

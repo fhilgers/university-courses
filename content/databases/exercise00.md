@@ -1,6 +1,5 @@
 +++
 title = "Exercise 00"
-insert_anchor_links = "right"
 slugify.anchors = "off"
 +++
 
