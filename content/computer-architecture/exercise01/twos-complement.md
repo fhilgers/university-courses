@@ -1,6 +1,5 @@
 +++
 title = "1. Two's Complement"
-weight = 1
 +++
 
 <h3>
