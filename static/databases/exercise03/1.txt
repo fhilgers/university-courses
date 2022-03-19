@@ -1,0 +1,19 @@
+@startuml
+class Product {
+  <<PK>> String name
+  String category
+  int count
+  double productionPrice
+  double purchasePrice
+  double grossSalePrice
+}
+class Ingredient {
+  <<PK>> String name
+}
+class Allergen {
+  <<PK>> String name
+}
+
+Product "1..*" -- "*" Ingredient
+Ingredient "*" -- "*" Allergen
+@enduml
