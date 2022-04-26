@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 01 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases"  />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming" checked />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#1-answer-the-following-questions">1. Answer the following Questions</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#1-what-are-data-types-primitive-data-types-and-complex-data-types">1. What are data types, primitive data types and complex data types?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#2-what-is-the-principle-of-secrecy-think-of-data-encapsulation-what-is-the-meaning-of-private-and-public-in-this-context">2. What is the principle of secrecy (think of data encapsulation)? What is the meaning of private and public in this context?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#3-what-is-method-overloading">3. What is method overloading?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#4-what-are-generics-and-their-use-cases">4. What are generics and their use cases?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#5-what-are-static-variables-methods">5. What are static variables&#x2F;methods?</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#2-setup-a-java-ide">2. Setup a Java IDE</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#3-arraylist-deduplication">3. ArrayList deduplication</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#4-comparison-of-native-array-and-object-based-arraylist">4. Comparison of native Array and object-based ArrayList</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#1-implement-a-method-to-generate-a-random-array">1. Implement a method to generate a random array</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#2-write-a-method-to-sort-an-array">2. Write a method to sort an array</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#3-overload-the-sorting-method-to-sort-arraylist-objects">3. Overload the sorting method to sort ArrayList objects.</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise01/#4-benchmark-the-two-methods-and-compare-the-results">4. Benchmark the two methods and compare the results.</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-answer-the-following-questions">1. Answer the following Questions</h3>
+<h5 id="1-what-are-data-types-primitive-data-types-and-complex-data-types">1. What are data types, primitive data types and complex data types?</h5>
+<p>Data types define which values a variable can hold. Primitive data types are for 
+example <code>int</code> or <code>char</code>. Complex data types are composites of other data types and
+methods.</p>
+<h5 id="2-what-is-the-principle-of-secrecy-think-of-data-encapsulation-what-is-the-meaning-of-private-and-public-in-this-context">2. What is the principle of secrecy (think of data encapsulation)? What is the meaning of <code>private</code> and <code>public</code> in this context?</h5>
+<p>The principle of secrecy refers to the user not having to know anything about
+the inner workings of an Item to use it. The modifiers <code>public</code> and <code>private</code> restrict
+the access to classes, methods, etc. to only specific contexts. <code>public</code> means that
+usage is not restricted while <code>private</code> means that for example a method can only
+be called from the class itself.</p>
+<h5 id="3-what-is-method-overloading">3. What is method overloading?</h5>
+<p>Method overloading refers to the act of specifying a method with the same name
+for multiple different inputs. It is important that the method signature differs.</p>
+<h5 id="4-what-are-generics-and-their-use-cases">4. What are generics and their use cases?</h5>
+<p>Generics are a way to reuse the same implementations for multiple data types. They
+are commonly used to implement data structures which do not care about what data they
+operate on (like <code>ArrayList</code>) or data structures which can reuse implementations for 
+many similar types implementing a specific interface (like <code>Comparable</code>).</p>
+<h5 id="5-what-are-static-variables-methods">5. What are static variables/methods?</h5>
+<p>Static variables and methods are shared between all objects of a specific class and
+can be used from the class itself without even referring to an object of it.</p>
+<h3 id="2-setup-a-java-ide">2. Setup a Java IDE</h3>
+<h3 id="3-arraylist-deduplication">3. ArrayList deduplication</h3>
+<p>Write a method that removes all duplicate entries from an ArrayList of integer
+values. The order of the numbers in the list should be persisted and a new list
+without duplicates should be returned.</p>
+<p>More information about ArrayList can be found in the 
+<img src="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html" alt="Java API" /></p>
+<p>Also write a small program (main method) to test your implementation.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">import </span><span>java.util.</span><span style="color:#d08770;">ArrayList</span><span>;
+</span><span style="color:#b48ead;">import </span><span>java.util.</span><span style="color:#d08770;">Arrays</span><span>;
+</span><span style="color:#b48ead;">import </span><span>java.util.stream.</span><span style="color:#d08770;">Collectors</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Task3 </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public static void </span><span style="color:#8fa1b3;">main</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String</span><span style="color:#b48ead;">[] </span><span style="color:#bf616a;">args</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">int[]</span><span style="color:#343d46;"> array1 </span><span>= </span><span style="color:#b48ead;">new int</span><span style="color:#343d46;">[]{</span><span style="color:#d08770;">1</span><span style="color:#343d46;">, </span><span style="color:#d08770;">1</span><span style="color:#343d46;">, </span><span style="color:#d08770;">2</span><span style="color:#343d46;">, </span><span style="color:#d08770;">3</span><span style="color:#343d46;">, </span><span style="color:#d08770;">4</span><span style="color:#343d46;">, </span><span style="color:#d08770;">1</span><span style="color:#343d46;">, </span><span style="color:#d08770;">2</span><span style="color:#343d46;">, </span><span style="color:#d08770;">3</span><span style="color:#343d46;">};
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">int[]</span><span style="color:#343d46;"> array2 </span><span>= </span><span style="color:#b48ead;">new int</span><span style="color:#343d46;">[]{</span><span style="color:#d08770;">7</span><span style="color:#343d46;">, </span><span style="color:#d08770;">5</span><span style="color:#343d46;">, </span><span style="color:#d08770;">3</span><span style="color:#343d46;">, </span><span style="color:#d08770;">5</span><span style="color:#343d46;">, </span><span style="color:#d08770;">1</span><span style="color:#343d46;">};
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">int[]</span><span style="color:#343d46;"> array3 </span><span>= </span><span style="color:#b48ead;">new int</span><span style="color:#343d46;">[]{</span><span style="color:#d08770;">1</span><span style="color:#343d46;">, </span><span style="color:#d08770;">1</span><span style="color:#343d46;">, </span><span style="color:#d08770;">1</span><span style="color:#343d46;">, </span><span style="color:#d08770;">1</span><span style="color:#343d46;">};
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; list1 </span><span>= </span><span style="color:#bf616a;">arrayToList</span><span style="color:#343d46;">(array1);
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; list2 </span><span>= </span><span style="color:#bf616a;">arrayToList</span><span style="color:#343d46;">(array2);
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; list3 </span><span>= </span><span style="color:#bf616a;">arrayToList</span><span style="color:#343d46;">(array3);
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; dedup1 </span><span>= </span><span style="color:#bf616a;">removeDups</span><span style="color:#343d46;">(list1);
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; dedup2 </span><span>= </span><span style="color:#bf616a;">removeDupsWithStream</span><span style="color:#343d46;">(list2);
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; dedup3 </span><span>= </span><span style="color:#bf616a;">removeDupsWithStream</span><span style="color:#343d46;">(list3);
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">System</span><span style="color:#343d46;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#343d46;">(dedup1);
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">System</span><span style="color:#343d46;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#343d46;">(dedup2);
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">System</span><span style="color:#343d46;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#343d46;">(dedup3);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private static </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; </span><span style="color:#8fa1b3;">arrayToList</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int[] </span><span style="color:#bf616a;">array</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return new </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;&gt;(</span><span style="color:#d08770;">Arrays</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">stream</span><span style="color:#343d46;">(array).</span><span style="color:#bf616a;">boxed</span><span style="color:#343d46;">().</span><span style="color:#bf616a;">toList</span><span style="color:#343d46;">());
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private static </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; </span><span style="color:#8fa1b3;">removeDupsWithStream</span><span style="color:#343d46;">(</span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; </span><span style="color:#bf616a;">list</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> list.</span><span style="color:#bf616a;">stream</span><span style="color:#343d46;">().</span><span style="color:#bf616a;">distinct</span><span style="color:#343d46;">().</span><span style="color:#bf616a;">collect</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Collectors</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">toCollection</span><span style="color:#343d46;">(</span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">::</span><span style="color:#bf616a;">new</span><span style="color:#343d46;">));
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private static </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; </span><span style="color:#8fa1b3;">removeDups</span><span style="color:#343d46;">(</span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; </span><span style="color:#bf616a;">list</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Integer</span><span style="color:#343d46;">&gt; l </span><span>= </span><span style="color:#b48ead;">new </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;&gt;();
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">for </span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int</span><span style="color:#343d46;"> i </span><span>:</span><span style="color:#343d46;"> list) {
+</span><span style="color:#343d46;">            </span><span style="color:#b48ead;">if </span><span style="color:#343d46;">(</span><span>!</span><span style="color:#343d46;">l.</span><span style="color:#bf616a;">contains</span><span style="color:#343d46;">(i)) l.</span><span style="color:#bf616a;">add</span><span style="color:#343d46;">(i);
+</span><span style="color:#343d46;">        }
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> l;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h3 id="4-comparison-of-native-array-and-object-based-arraylist">4. Comparison of native Array and object-based ArrayList</h3>
+<p>In the following example, we want to compare the performance between an
+object-based ArrayList and a native array. Which do you think will be faster?</p>
+<h5 id="1-implement-a-method-to-generate-a-random-array">1. Implement a method to generate a random array</h5>
+<p>Implement the method <code>private static int[] generateTestData(int size)</code>, which 
+returns an array of randomized integer numbers. The size of the array is determined
+by the given parameter. To generate random numbers you can use the class <code>java.util.Random</code>.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">private static int[] </span><span style="color:#bf616a;">generateTestData</span><span>(</span><span style="color:#b48ead;">long</span><span> size) {
+</span><span>    </span><span style="color:#b48ead;">return new </span><span style="color:#d08770;">Random</span><span>().</span><span style="color:#bf616a;">ints</span><span>(size).</span><span style="color:#bf616a;">toArray</span><span>();
+</span><span>}
+</span></code></pre>
+<h5 id="2-write-a-method-to-sort-an-array">2. Write a method to sort an array</h5>
+<p>Write the method <code>private static void sort(int[] inputData)</code> which sorts the
+given array of numbers in ascending order. Use the BubbleSort algorithm for that purpose.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">private static</span><span> void </span><span style="color:#bf616a;">sort</span><span>(</span><span style="color:#b48ead;">int[]</span><span> inputData) {
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">0</span><span>; </span><span style="color:#bf616a;">bubbleSortSinglePass</span><span>(inputData, inputData.length - i); i++);
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">private static boolean </span><span style="color:#bf616a;">bubbleSortSinglePass</span><span>(</span><span style="color:#b48ead;">int[]</span><span> input, </span><span style="color:#b48ead;">int</span><span> right) {
+</span><span>    </span><span style="color:#b48ead;">boolean</span><span> swapped = </span><span style="color:#d08770;">false</span><span>;
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#b48ead;">int</span><span> i = </span><span style="color:#d08770;">0</span><span>; i &lt; right - </span><span style="color:#d08770;">1</span><span>; i++) {
+</span><span>        </span><span style="color:#b48ead;">if </span><span>(input[i] &gt; input[i + </span><span style="color:#d08770;">1</span><span>]) {
+</span><span>    	swapped = </span><span style="color:#d08770;">true</span><span>;
+</span><span>    	</span><span style="color:#bf616a;">swap</span><span>(input, i, i + </span><span style="color:#d08770;">1</span><span>);
+</span><span>        }
+</span><span>    }
+</span><span>    </span><span style="color:#b48ead;">return</span><span> swapped;
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">private static</span><span> void </span><span style="color:#bf616a;">swap</span><span>(</span><span style="color:#b48ead;">int[]</span><span> input, </span><span style="color:#b48ead;">int</span><span> i, </span><span style="color:#b48ead;">int</span><span> j) {
+</span><span>    </span><span style="color:#b48ead;">int</span><span> temp = input[i];
+</span><span>    input[i] = input[j];
+</span><span>    input[j] = temp;
+</span><span>}
+</span></code></pre>
+<h5 id="3-overload-the-sorting-method-to-sort-arraylist-objects">3. Overload the sorting method to sort ArrayList objects.</h5>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">private static</span><span> void </span><span style="color:#bf616a;">sort</span><span>(</span><span style="color:#d08770;">ArrayList</span><span>&lt;</span><span style="color:#d08770;">Integer</span><span>&gt; inputData) {
+</span><span>    </span><span style="color:#b48ead;">int[]</span><span> temp = inputData.</span><span style="color:#bf616a;">stream</span><span>().</span><span style="color:#bf616a;">mapToInt</span><span>(</span><span style="color:#d08770;">Integer</span><span>::</span><span style="color:#bf616a;">intValue</span><span>).</span><span style="color:#bf616a;">toArray</span><span>();
+</span><span>    inputData.</span><span style="color:#bf616a;">clear</span><span>();
+</span><span>    </span><span style="color:#bf616a;">sort</span><span>(temp);
+</span><span>    inputData.</span><span style="color:#bf616a;">addAll</span><span>(</span><span style="color:#d08770;">Arrays</span><span>.</span><span style="color:#bf616a;">stream</span><span>(temp).</span><span style="color:#bf616a;">boxed</span><span>().</span><span style="color:#bf616a;">toList</span><span>());
+</span><span>}
+</span></code></pre>
+<h5 id="4-benchmark-the-two-methods-and-compare-the-results">4. Benchmark the two methods and compare the results.</h5>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public static</span><span> void </span><span style="color:#bf616a;">main</span><span>(</span><span style="color:#d08770;">String</span><span style="color:#b48ead;">[]</span><span> args) {
+</span><span>	
+</span><span>    </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(&quot;</span><span style="color:#a3be8c;">+++++++++Native Array v.s. ArrayList performance test+++++++++</span><span>&quot;);
+</span><span>    
+</span><span>    </span><span style="color:#a7adba;">//Fill Array with test data
+</span><span>    </span><span style="color:#b48ead;">int[]</span><span> testDataArray = </span><span style="color:#bf616a;">generateTestData</span><span>(</span><span style="color:#d08770;">10000</span><span>);
+</span><span>    
+</span><span>    </span><span style="color:#a7adba;">//Fill ArrayList with the same test data
+</span><span>    </span><span style="color:#d08770;">ArrayList</span><span>&lt;</span><span style="color:#d08770;">Integer</span><span>&gt; testDataArrayList = </span><span style="color:#d08770;">IntStream</span><span>.</span><span style="color:#bf616a;">of</span><span>(testDataArray)
+</span><span>    		.</span><span style="color:#bf616a;">boxed</span><span>()
+</span><span>    		.</span><span style="color:#bf616a;">collect</span><span>(</span><span style="color:#d08770;">Collectors</span><span>.</span><span style="color:#bf616a;">toCollection</span><span>(</span><span style="color:#d08770;">ArrayList</span><span>::</span><span style="color:#bf616a;">new</span><span>));
+</span><span>    
+</span><span>    </span><span style="color:#b48ead;">long</span><span> timeElapsed;
+</span><span>    
+</span><span>    </span><span style="color:#a7adba;">//Do test for Array
+</span><span>    timeElapsed = </span><span style="color:#bf616a;">benchmark</span><span>(() </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">sort</span><span>(testDataArray));
+</span><span>    </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(&quot;</span><span style="color:#a3be8c;">Time elapsed sorting Array: </span><span>&quot;+timeElapsed+&quot;</span><span style="color:#a3be8c;"> Milliseconds</span><span>&quot;);
+</span><span>    
+</span><span>    </span><span style="color:#a7adba;">//Do test for ArrayList
+</span><span>    timeElapsed = </span><span style="color:#bf616a;">benchmark</span><span>(() </span><span style="color:#b48ead;">-&gt; </span><span style="color:#bf616a;">sort</span><span>(testDataArrayList));
+</span><span>    </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(&quot;</span><span style="color:#a3be8c;">Time elapsed sorting ArrayList: </span><span>&quot;+timeElapsed+&quot;</span><span style="color:#a3be8c;"> Milliseconds</span><span>&quot;);
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">private static long </span><span style="color:#bf616a;">benchmark</span><span>(</span><span style="color:#d08770;">Runnable</span><span> r) {
+</span><span>    </span><span style="color:#b48ead;">long</span><span> testStart = </span><span style="color:#d08770;">System</span><span>.</span><span style="color:#bf616a;">currentTimeMillis</span><span>();
+</span><span>    r.</span><span style="color:#bf616a;">run</span><span>();
+</span><span>    </span><span style="color:#b48ead;">long</span><span> testEnd = </span><span style="color:#d08770;">System</span><span>.</span><span style="color:#bf616a;">currentTimeMillis</span><span>();
+</span><span>    
+</span><span>    </span><span style="color:#b48ead;">return</span><span> testEnd - testStart;
+</span><span>}
+</span></code></pre>
+<p>Surprisingly, even through the method for sorting the ArrayList has to convert
+the list to an array and then call the other method, both take the same time to
+execute (around 90ms for 10000 elements).</p>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

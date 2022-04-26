@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 01 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases" checked />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise01/#1-problem-with-data-systems">1. Problem with data systems</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise01/#2-ansi-sparc">2. ANSI SPARC</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise01/#3-benefits-of-databases">3. Benefits of databases</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise01/#4-database-lifecycle">4. Database lifecycle</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise01/#5-semantic-modeling-1">5. Semantic modeling 1</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise01/#6-semantic-modeling-2">6. Semantic modeling 2</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming"  />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-problem-with-data-systems">1. Problem with data systems</h3>
+<table><thead><tr><th>Datum</th><th>Ort</th><th>Zeit</th><th>Vogelart</th><th>Anzahl</th><th>Zugvogel</th><th>Familie</th><th>Beobacher*in</th><th>Email</th></tr></thead><tbody>
+<tr><td>16.01.2021</td><td>Klagenfurt, Kaernten</td><td>09.00 - 11.00</td><td>Blaumeise</td><td>2</td><td>nein</td><td>Meisen</td><td>Anna Wert</td><td>a.w@gmail.com</td></tr>
+<tr><td>16.01.2021</td><td>Klagenfurt, Kaernten</td><td>09.00 - 11.00</td><td>Haussperling</td><td>14</td><td>nein</td><td>Sperlingvogel</td><td>Anna Wert</td><td>a.w@gmail.com</td></tr>
+<tr><td>16.01.2021</td><td>Klagenfurt, Kaernten</td><td>09.00 - 11.00</td><td>Kleiber</td><td>1</td><td>nein</td><td>Meisen</td><td>Anna Wert</td><td>a.w@gmx.at</td></tr>
+<tr><td>02.05.2021</td><td>Villach, Kaernten</td><td>12.00 - 13.00</td><td>Blaumeise</td><td>1</td><td>nein</td><td>Meisen</td><td>Jan Vogel</td><td>j.v@gmail.com</td></tr>
+<tr><td>02.05.2021</td><td>Villach, Kaernten</td><td>12.00 - 13.00</td><td>Schwalbe</td><td>3</td><td>ja</td><td>Sperlingsvogel</td><td>Jan Vogel</td><td>j.v@gmail.com</td></tr>
+<tr><td>01.08.2021</td><td>Graz, Stmk</td><td>09.00 - 11.00</td><td>Bachstelze</td><td>2</td><td>ja</td><td>Stelze</td><td>Lea Berg</td><td>l.b@gmail.com</td></tr>
+<tr><td>03.08.2021</td><td>Villach, Kaernten</td><td>17.00 - 18.00</td><td>Blaumeise</td><td>1</td><td>ja</td><td>Meisen</td><td>Jan Vogel</td><td>a.w@gmx.at</td></tr>
+<tr><td>03.08.2021</td><td>Villach, Kaernten</td><td>17.00 - 18.00</td><td>Schwalbe</td><td>3</td><td>ja</td><td>Sperlingsvogel</td><td>Jan Vogel</td><td>a.w@gmx.at</td></tr>
+</tbody></table>
+<p><strong>Which redundancies and inconsistencies can you identify?</strong></p>
+<p>Redundancies:</p>
+<ul>
+<li>Dates</li>
+<li>Locations</li>
+<li>Times</li>
+<li>etc.</li>
+</ul>
+<p>Inconsistencies:</p>
+<ul>
+<li>Email: Anna Wert has multiple email addresses</li>
+<li>Spelling Mistake: Sperlingvogel</li>
+<li>Bluetit is migratory and non-migratory bird at the same time</li>
+</ul>
+<p><strong>What typical problems can occur when an application uses 
+files as described above to store its data?</strong> 
+<em>Assumption: Several different applications read and write the files 
+and each application has several users.</em></p>
+<p>There is no standarisation of how the data is represented. This creates tight 
+coupling between the application and the specifiic data representation chosen
+and is a lot less flexible than a database. Also, as there is no good way to 
+represent relations, there is a lot of redundancy and inconsistency as seen
+in the table above.</p>
+<h3 id="2-ansi-sparc">2. ANSI SPARC</h3>
+<p>The ANSI SPARC model is a standard reference model for building a database. </p>
+<p><strong>Roughly sketch its layers and their functions.</strong></p>
+<p>There are three layers in ANSI-SPARC:</p>
+<ol>
+<li>
+<p>External Level:
+This level shows only the relevant part for a user/application and 
+excludes unauthorized and irrelevant data.</p>
+</li>
+<li>
+<p>Conceptual Level:
+This level shows the whole database with all relations.</p>
+</li>
+<li>
+<p>Internal Level:
+This level specifies the physical storage of the data.</p>
+</li>
+</ol>
+<h3 id="3-benefits-of-databases">3. Benefits of databases</h3>
+<p>A database built according to the ANSI SPARC model provides physical and logical 
+data independence. </p>
+<p><strong>What does this mean?</strong></p>
+<p>Physical independence means that the <em>Internal Level</em>, meaning the physical
+representation of the data on a storage medium, can be changed without the need
+for a change in an application.</p>
+<p>Logical independence means that the <em>Conceptual Level</em>, meaning the
+representation of all data in the DB, can be changed without affecting
+applications as long as the <em>External Level</em> can still be derived. </p>
+<p><strong>Which problems from task 1 does this solve?</strong></p>
+<p>It pretty solves the problem of inflexibility outlined in task 1. The logical 
+independence provides a lot of flexibility compared to a file based
+representation of the data.</p>
+<h3 id="4-database-lifecycle">4. Database lifecycle</h3>
+<p><strong>What are the phases of the DB lifecycle and what happens roughly in each 
+phase?</strong></p>
+<p>The database lifecycle consists of five phases:</p>
+<ol>
+<li>
+<p>Requirements Analysis:
+Find out who needs what data and in which quality.</p>
+</li>
+<li>
+<p>Conceptual Design:
+Specify the conceptual data model.</p>
+</li>
+<li>
+<p>Logical Design:
+Specify the logical data model.</p>
+</li>
+<li>
+<p>Physical Design:
+Specify the internal data model.</p>
+</li>
+<li>
+<p>Usage, Maintenance and Reorganization:
+Tune and adapt the database.</p>
+</li>
+</ol>
+<h3 id="5-semantic-modeling-1">5. Semantic modeling 1</h3>
+<p>The ornithologists' association 'Buntspecht' would like to learn more about the
+population of native birds. Therefore, it calls on interested people to observe
+birds once a month for a limited period of time (e.g. for one hour) in a 
+self-selected environment (at home, while hiking, etc.). These observations are
+to be stored (via a website) in a database. In the requirements analysis, the
+following text about the bird domain has been created: </p>
+<p><em>People make observations. The <strong>first name</strong>, <strong>surname</strong>, <strong>address</strong> and
+<strong>date of birth</strong> of each person should be stored. If available also the 
+<strong>TelNr.</strong> and the <strong>eMail</strong>. Some persons are even <strong>members of the 
+association.</strong></em></p>
+<p><em>Each observation takes place on a <strong>certain day</strong> (e.g., on 15 February 2022) 
+and in a <strong>certain period</strong> (e.g., from 13 to 14 h). The observation takes
+place at a certain <strong>Austrian district</strong> and <strong>province</strong> and in a <strong>typical
+environment</strong> like, e.g., English garden, natural garden, forest, mountain or
+city center. For each environment there is a <strong>short description.</strong></em></p>
+<p><em>Each observation includes <strong>one or more bird species</strong> observed and the 
+<strong>number of birds</strong> of that species seen (e.g., an observation on 16 January 
+(11-13h) in Klagenfurt/Carinthia includes 2 bluebirds, 14 house sparrows and a
+nuthatch).</em></p>
+<p><em>Each bird species has a <strong>name</strong>, a <strong>scientific name</strong> and a <strong>description</strong>.
+Some bird species are <strong>migratory birds</strong>. Each bird species includes a <strong>brief
+description</strong> and a <strong>link to a website</strong> with more information. Each bird 
+species also <strong>belongs to a family</strong> (for example, nuthatches belong to the
+Sittidae family).</em></p>
+<p><strong>Based on this text, create a semantic data model in the form of a UML class
+diagram.</strong></p>
+<img src="/databases/exercise01/uml.svg" alt="" width="50%">
+<h3 id="6-semantic-modeling-2">6. Semantic modeling 2</h3>
+<p><strong>Does your semantic data model from Task 6 include the information needed to do
+this and if so, where can they be found?</strong></p>
+<p>The association 'Buntspecht' would like to make the following evaluations, 
+among others:</p>
+<ul>
+<li>
+<p><strong>All observations with the respective number per observed bird species.</strong></p>
+<p>List all observations.</p>
+</li>
+<li>
+<p><strong>When and where were there observations in a forest in Carinthia?</strong></p>
+<p>List all observations and filter them by environment and district.</p>
+</li>
+<li>
+<p><strong>In which environment were the most magpies observed in Carinthia in October?</strong></p>
+<p>List all observations, filter them by day and district. List all species for
+all those observations and look where the most magpies where observed.</p>
+</li>
+<li>
+<p><strong>How many greenfinches were observed in Klagenfurt in January?</strong></p>
+<p>List all observations, filter them by day and province and add up all observed
+greenfinches.</p>
+</li>
+<li>
+<p><strong>What is the most observed species group observed in waterfront areas in the
+district of Graz?</strong></p>
+<p>List all observations, filter them by environment and district and add up all
+the amounts for all observed species. Then take the maximum.</p>
+</li>
+<li>
+<p><strong>Which migratory bird species was observed most often in the district of
+Villach in May?</strong></p>
+<p>List all observations, filter them by district and add up all the amounts for 
+every migratory species. Then take the maximum.</p>
+</li>
+<li>
+<p><strong>What is the name of the smallest observed species of Sittidae?</strong></p>
+<p>List all observations, add up all the amounts for every species which belongs 
+to the family of sittidae. Then find the minimum and return this species.</p>
+</li>
+<li>
+<p><strong>Which persons donated how much to the association last year?</strong></p>
+<p>List all persons and find the smallest donation.</p>
+</li>
+<li>
+<p><strong>Which individuals observed the most bird species last year?</strong></p>
+<p>List all persons, add up all the different species in their observations and 
+find the maximum.</p>
+</li>
+</ul>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

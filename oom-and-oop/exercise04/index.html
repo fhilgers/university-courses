@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 04 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases"  />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming" checked />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#1-answer-the-following-questions">1. Answer the following questions.</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#1-what-is-polymorphism">1. What is polymorphism?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#2-what-is-dynamic-binding">2. What is dynamic binding?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#3-what-are-abstract-classes">3. What are abstract classes?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#4-what-are-the-properties-of-an-abstract-method">4. What are the properties of an abstract method?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#5-can-an-abstract-method-be-private">5. Can an abstract method be private?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#6-what-does-the-keyword-final-mean-in-the-context-of-inheritance-hirarchies">6. What does the keyword &#x27;final&#x27; mean in the context of inheritance hirarchies?</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#2-dynamic-binding">2. Dynamic Binding</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#3-reflection-and-typecasting">3. Reflection and Typecasting</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise04/#4-abstract-classes">4. Abstract Classes</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-answer-the-following-questions">1. Answer the following questions.</h3>
+<h5 id="1-what-is-polymorphism">1. What is polymorphism?</h5>
+<p>Polymorphism means that an object of a specific class can also be treated as an
+object of the type of all their parent classes and also just be treated like 
+all the interfaces it implements.</p>
+<h5 id="2-what-is-dynamic-binding">2. What is dynamic binding?</h5>
+<p>Dynamic binding means that the method call is resolved at runtime.</p>
+<h5 id="3-what-are-abstract-classes">3. What are abstract classes?</h5>
+<p>Abstract classes which can compared to interfaces already implement functions 
+and create variables but cannot be instantiated directly. They have to be
+extended and all their abstract methods have to be implemented from the
+subclass.</p>
+<h5 id="4-what-are-the-properties-of-an-abstract-method">4. What are the properties of an abstract method?</h5>
+<p>An abstract method has to be implemented in a subclass.</p>
+<h5 id="5-can-an-abstract-method-be-private">5. Can an abstract method be private?</h5>
+<p>Yes it can.</p>
+<h5 id="6-what-does-the-keyword-final-mean-in-the-context-of-inheritance-hirarchies">6. What does the keyword 'final' mean in the context of inheritance hirarchies?</h5>
+<p>Final means that the class can not be extended.</p>
+<h3 id="2-dynamic-binding">2. Dynamic Binding</h3>
+<p>Have a look at the following java code snippet:</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">getHardwareInfo</span><span>(){
+</span><span>    </span><span style="color:#d08770;">String</span><span> allInfo = &quot;</span><span style="color:#a3be8c;">Hardware in this PC: </span><span>&quot;;
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#d08770;">Hardware</span><span> hardwarePart : hardwareParts) {
+</span><span>        allInfo = allInfo + &quot;</span><span style="color:#96b5b4;">\n</span><span>&quot; + hardwarePart.</span><span style="color:#bf616a;">getInfo</span><span>();
+</span><span>    }
+</span><span>    </span><span style="color:#b48ead;">return</span><span> allInfo;
+</span><span>}
+</span></code></pre>
+<p>In this method <code>getInfo</code> does not execute the code from the Hardware class, but
+instead executes the code of the overridden methods even though we declare the
+type as Hardware and not as the specific subclasses.</p>
+<p><strong>How is this behaviour called?</strong></p>
+<p>This behaviour is called dynamic binding.</p>
+<h3 id="3-reflection-and-typecasting">3. Reflection and Typecasting</h3>
+<p>In the PC class, write a small <code>public void test()</code> method that iterates over 
+the installed hardware parts and calls a method for each installed part, which 
+has not been overridden (e.g. a getter method with additional information).</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public</span><span> void </span><span style="color:#bf616a;">test</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">for </span><span>(</span><span style="color:#d08770;">Hardware</span><span> h : hardwareParts) {
+</span><span>        </span><span style="color:#b48ead;">if </span><span>(h instanceof </span><span style="color:#d08770;">Memory</span><span>) {
+</span><span>            </span><span style="color:#d08770;">Memory</span><span> m = (</span><span style="color:#d08770;">Memory</span><span>) h;
+</span><span>            </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(m.</span><span style="color:#bf616a;">getSizeInGB</span><span>());
+</span><span>            </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(m.</span><span style="color:#bf616a;">getReadSpeedInMbit</span><span>());
+</span><span>        } </span><span style="color:#b48ead;">else if </span><span>(h instanceof </span><span style="color:#d08770;">CPU</span><span>) {
+</span><span>            </span><span style="color:#d08770;">CPU</span><span> c = (</span><span style="color:#d08770;">CPU</span><span>) h;
+</span><span>            </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(c.</span><span style="color:#bf616a;">getClockSpeed</span><span>());
+</span><span>            </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(c.</span><span style="color:#bf616a;">getNumberOfCores</span><span>());
+</span><span>        } </span><span style="color:#b48ead;">else if </span><span>(h instanceof </span><span style="color:#d08770;">Graphics</span><span>) {
+</span><span>            </span><span style="color:#d08770;">Graphics</span><span> g = (</span><span style="color:#d08770;">Graphics</span><span>) h;
+</span><span>            </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(g.</span><span style="color:#bf616a;">getResolutions</span><span>());
+</span><span>        }
+</span><span>    }
+</span><span>}
+</span></code></pre>
+<p>You will need to use explicit typecasts and possibly the <code>instanceof</code> operator
+operator. </p>
+<p><strong>Why are these steps necessary?</strong></p>
+<p>These methods are not defined for the Superclass <code>Hardware</code> so we have to 
+dynamically find out the type of an object to call their respective methods.</p>
+<h3 id="4-abstract-classes">4. Abstract Classes</h3>
+<ul>
+<li>
+<p><strong>Which classes from exercise two and three can or should be abstract and how
+would that restrict the usage of those classes?</strong>
+The two classes <code>Hardware</code> and <code>Memory</code> can and should be abstract, because 
+it does not make sense to instantiate them directly.</p>
+</li>
+<li>
+<p><strong>Can you also find usecases for abstract methods?</strong>
+Not really, as the <code>Hardware</code> class can already define the output of the ID
+and the name.</p>
+</li>
+<li>
+<p><strong>What do subclasses of abstract classes have to do with regard to abstract 
+methods?</strong>
+Abstract methods have to be overridden.</p>
+</li>
+</ul>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

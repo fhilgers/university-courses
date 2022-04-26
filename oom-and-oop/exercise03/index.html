@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 03 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases"  />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming" checked />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#1-answer-the-following-questions">1. Answer the following questions.</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#1-why-are-inheritance-hierarchies-built-between-classes-what-are-the-advantages">1. Why are inheritance hierarchies built between classes? What are the advantages?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#2-is-a-constructor-of-the-superclasses-always-called-as-soon-as-a-new-object-of-a-subclass-is-created">2. Is a constructor of the superclasses always called as soon as a new object of a subclass is created?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#3-when-must-the-constructor-of-the-superclass-be-called-explicitly">3. When must the constructor of the superclass be called explicitly?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#4-what-does-overriding-mean-i-e-overriding-a-method">4. What does &#x27;overriding&#x27; mean, i.e. overriding a method?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#5-how-can-methods-of-the-superclass-be-called-explicitly-even-if-they-have-been-overridden">5. How can methods of the superclass be called explicitly even if they have been overridden?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#6-what-are-internal-classes">6. What are internal classes?</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#2-cpu-class-with-inheritance">2. CPU class with inheritance</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#3-memory-ram-and-harddisk-classes-with-inheritance">3. Memory, Ram and Harddisk classes with inheritance</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#1-memory">1. Memory</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#2-ram-and-harddisk">2. RAM and Harddisk</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise03/#4-graphics-class-with-internal-resolution">4. Graphics class with internal Resolution</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-answer-the-following-questions">1. Answer the following questions.</h3>
+<h4 id="1-why-are-inheritance-hierarchies-built-between-classes-what-are-the-advantages">1. Why are inheritance hierarchies built between classes? What are the advantages?</h4>
+<p>Inheritance hierarchies are mainly built to maximize code reuse. If one has, 
+like in the examples below, a way to model <code>Hardware</code>, then we can reuse the
+code and extend it for more specific types or Hardware like <code>CPU</code> and <code>RAM</code>.</p>
+<h4 id="2-is-a-constructor-of-the-superclasses-always-called-as-soon-as-a-new-object-of-a-subclass-is-created">2. Is a constructor of the superclasses always called as soon as a new object of a subclass is created?</h4>
+<p>The default constructor is always called implicitly, unless the default 
+constructor does not exist and another constructor is defined.</p>
+<h4 id="3-when-must-the-constructor-of-the-superclass-be-called-explicitly">3. When must the constructor of the superclass be called explicitly?</h4>
+<p>When the superclass defines a constructor with parameters, then this 
+constructor has to be called explicitly</p>
+<h4 id="4-what-does-overriding-mean-i-e-overriding-a-method">4. What does 'overriding' mean, i.e. overriding a method?</h4>
+<p>Overriding a method refers to changing the behaviour of a method without 
+changing the signature. This is typically done in subclasses to change the
+behaviour of the methods defined in the superclass.</p>
+<h4 id="5-how-can-methods-of-the-superclass-be-called-explicitly-even-if-they-have-been-overridden">5. How can methods of the superclass be called explicitly even if they have been overridden?</h4>
+<p>One has to call those methods with a special keyword called <code>super</code>.</p>
+<h4 id="6-what-are-internal-classes">6. What are internal classes?</h4>
+<p>Internal classes are classes defined inside another class.</p>
+<h3 id="2-cpu-class-with-inheritance">2. CPU class with inheritance</h3>
+<p>Write a class CPU that inherits from the class Hardware from exercise 02. The 
+class CPU extends hardware with information about its speed and the number of
+cores.</p>
+<ul>
+<li>Implement the appropriate instance variables and a constructor for
+initialization.</li>
+<li>The inherited method <code>public String getInfo()</code> should be overwritten and
+return both the inherited and the new information as a string.</li>
+</ul>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">CPU </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Hardware </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final double </span><span style="color:#343d46;">clockSpeed;
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final int </span><span style="color:#343d46;">numberOfCores;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">CPU</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">clockSpeed</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">numberOfCores</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name);
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.clockSpeed </span><span>=</span><span style="color:#343d46;"> clockSpeed;
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.numberOfCores </span><span>=</span><span style="color:#343d46;"> numberOfCores;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">getInfo</span><span style="color:#343d46;">()
+</span><span style="color:#343d46;">            </span><span>+ &quot;</span><span style="color:#a3be8c;">, clock speed: </span><span>&quot; +</span><span style="color:#343d46;"> clockSpeed
+</span><span style="color:#343d46;">            </span><span>+ &quot;</span><span style="color:#a3be8c;">, number of cores: </span><span>&quot; +</span><span style="color:#343d46;"> numberOfCores;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h3 id="3-memory-ram-and-harddisk-classes-with-inheritance">3. Memory, Ram and Harddisk classes with inheritance</h3>
+<h4 id="1-memory">1. Memory</h4>
+<p>Analogous to task 2, write a class Memory that in turn inherits from Hardware.
+For Memory, the size as well as the average read speed are of interest. Don not
+forget to overwrite <code>getInfo()</code> again accordingly.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Memory </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Hardware </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final double </span><span style="color:#343d46;">sizeInGB;
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final double </span><span style="color:#343d46;">readSpeedInMbit;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Memory</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">sizeInGB</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">readSpeedInMbit</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name);
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.sizeInGB </span><span>=</span><span style="color:#343d46;"> sizeInGB;
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.readSpeedInMbit </span><span>=</span><span style="color:#343d46;"> readSpeedInMbit;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">getInfo</span><span style="color:#343d46;">()
+</span><span style="color:#343d46;">            </span><span>+ &quot;</span><span style="color:#a3be8c;">, size in GB: </span><span>&quot; +</span><span style="color:#343d46;"> sizeInGB
+</span><span style="color:#343d46;">            </span><span>+ &quot;</span><span style="color:#a3be8c;">, read speed in Mbit </span><span>&quot; +</span><span style="color:#343d46;"> readSpeedInMbit;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h4 id="2-ram-and-harddisk">2. RAM and Harddisk</h4>
+<p>Realize the classes RAM and Harddisk, which inherit from Memory. You can provide
+additional information for these classes in the form of instance variables, if
+you wish.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">RAM </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Memory </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">RAM</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">sizeInGB</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">readSpeedInMbit</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name, sizeInGB, readSpeedInMbit);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Harddisk </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Memory </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Harddisk</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">sizeInGB</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">double </span><span style="color:#bf616a;">readSpeedInMbit</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name, sizeInGB, readSpeedInMbit);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h3 id="4-graphics-class-with-internal-resolution">4. Graphics class with internal Resolution</h3>
+<p>As in Task 2, implement a class Graphics which inherits from Hardware and
+represents a graphics card. A graphics card can support different resolutions
+(e.g. 800X600, 1024X768, etc.). </p>
+<p>For a resolution mode an internal class <code>Resolution</code> is to be defined inside
+the class <code>Graphics</code> which manages information about a certain horizontal and
+vertical resolution.</p>
+<p>Graphics then manages a list (e.g. <code>ArrayList</code>) of resolutions which stores the
+different resolutions supported by the graphics card.</p>
+<p>Do not forget to overwrite <code>getInfo()</code> again accordingly.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">import </span><span>java.util.</span><span style="color:#d08770;">ArrayList</span><span>;
+</span><span style="color:#b48ead;">import </span><span>java.util.stream.</span><span style="color:#d08770;">Collectors</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Graphics </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Hardware </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private</span><span style="color:#343d46;"> record </span><span style="color:#8fa1b3;">Resolution</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">horizontal</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">vertical</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">toString</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">            </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">{ horizontal: %s, vertical: %s }</span><span>&quot;</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">formatted</span><span style="color:#343d46;">(horizontal, vertical);
+</span><span style="color:#343d46;">        }
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Resolution</span><span style="color:#343d46;">&gt; resolutions;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Graphics</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name);
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.resolutions </span><span>= </span><span style="color:#b48ead;">new </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;&gt;();
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">addResolution</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">horizontal</span><span style="color:#343d46;">, </span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">vertical</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        resolutions.</span><span style="color:#bf616a;">add</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">new </span><span style="color:#d08770;">Resolution</span><span style="color:#343d46;">(horizontal, vertical));
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">getInfo</span><span style="color:#343d46;">()
+</span><span style="color:#343d46;">            </span><span>+ &quot;</span><span style="color:#a3be8c;">, supported resolutions: [</span><span>&quot;
+</span><span style="color:#343d46;">            </span><span>+</span><span style="color:#343d46;"> resolutions.</span><span style="color:#bf616a;">stream</span><span style="color:#343d46;">()
+</span><span style="color:#343d46;">                    .</span><span style="color:#bf616a;">map</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Resolution</span><span style="color:#343d46;">::</span><span style="color:#bf616a;">toString</span><span style="color:#343d46;">)
+</span><span style="color:#343d46;">                    .</span><span style="color:#bf616a;">collect</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Collectors</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">joining</span><span style="color:#343d46;">(</span><span>&quot;</span><span style="color:#a3be8c;">, </span><span>&quot;</span><span style="color:#343d46;">)) </span><span>+ &quot;</span><span style="color:#a3be8c;">]</span><span>&quot;</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

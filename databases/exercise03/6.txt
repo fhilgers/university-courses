@@ -1,0 +1,117 @@
+@startuml
+class Product {
+  <<PK>> String name
+  String category
+  int count
+  double productionPrice
+  double purchasePrice
+  double grossSalePrice
+}
+
+class GiftBasket {
+  double salePrice
+  double weight
+}
+
+class Ingredient {
+  <<PK>> String name
+}
+class Allergen {
+  <<PK>> String name
+}
+
+class Branch {
+  <<PK>> long number
+  Address address
+}
+class Room {
+  double size
+  String purpose
+}
+
+class Quantity {
+  int quantity
+}
+
+class Sale {
+  Date date
+  double invoiceAmount
+}
+
+class Commission {}
+
+class Person {
+  String firstName
+  String lastName
+  Date dateOfBirth
+  Address address
+}
+
+class Employee {
+  double grossSalary
+}
+
+class Supervisor {}
+
+class EmployeeCard {
+  <<PK>> long number
+  Date authorizationDate
+  Date expirationDate
+}
+
+class CustomerCard {
+  <<PK>> long number
+  long bonusPoints
+}
+
+class Activity {
+  <<PK>> String name
+}
+
+class Customer {
+  String eMail
+  String telNr
+  boolean sendNewsletter
+}
+
+class CellPhone {
+  <<PK>> String phoneNumber
+  String modelNumber
+}
+  
+Product "1..*" -- "*" Ingredient
+Ingredient "*" -- "*" Allergen
+
+Branch "*" -- "*" Product : stores >
+Branch "*" -- "1..*" Product : sells >
+
+Sale --|> Quantity
+
+(Branch, Product) .. Sale
+(Branch, Product) .. Quantity
+
+Branch "1" *-- "1..*" Room
+
+GiftBasket "*" --* "5..*" Product
+(GiftBasket, Product) .. Quantity
+
+Employee --|> Person
+Customer --|> Person
+
+Employee "1" -- "*" Sale
+Employee "*" -- "1" Activity
+Employee "1" *-- "1" EmployeeCard
+
+Customer "0..1" -- "*" Sale
+Customer "1" *-- "1" CustomerCard
+
+Employee "1..*" -- "1" Branch : is working in >
+Employee "1..*" -- "*" Branch : has worked in >
+
+(Employee, Sale) .. Commission
+
+Supervisor --|> Employee
+Supervisor "0..1" -- "*" Employee : supervises >
+
+Employee "0..1" -- "0..1" CellPhone
+@enduml

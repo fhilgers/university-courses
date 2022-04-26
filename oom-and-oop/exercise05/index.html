@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 05 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases"  />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming" checked />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#1-answer-the-following-questions">1. Answer the following questions.</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#1-besides-private-and-public-there-are-two-other-visibility-levels-in-java-how-are-these-defined">1. Besides private and public, there are two other visibility levels in Java. How are these defined?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#2-what-are-interfaces">2. What are interfaces?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#3-can-interfaces-provide-implementations-for-methods">3. Can interfaces provide implementations for methods?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#4-can-interfaces-have-variables">4. Can interfaces have variables?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#5-how-do-interfaces-and-abstract-classes-differ-methods-variables-visibility-etc">5. how do interfaces and abstract classes differ (methods, variables, visibility, etc.)?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#6-what-does-the-keyword-final-mean-in-relation-to-variables-and-methods">6. What does the keyword final mean in relation to variables and methods?</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#2-analyze-the-uml-diagram">2. Analyze the UML diagram</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#task-3">Task 3</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise05/#task-4">Task 4</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-answer-the-following-questions">1. Answer the following questions.</h3>
+<h5 id="1-besides-private-and-public-there-are-two-other-visibility-levels-in-java-how-are-these-defined">1. Besides private and public, there are two other visibility levels in Java. How are these defined?</h5>
+<table><thead><tr><th></th><th align="center">Class</th><th align="center">Package</th><th align="center">Subclass (same pkg)</th><th align="center">Subclass (diff pkg)</th><th align="center">World</th></tr></thead><tbody>
+<tr><td><code>public</code></td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td></tr>
+<tr><td><code>protected</code></td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td></td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center"></td><td align="center"></td></tr>
+<tr><td><code>private</code></td><td align="center">+</td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+</tbody></table>
+<h5 id="2-what-are-interfaces">2. What are interfaces?</h5>
+<p>An interface is a type which just defines methods but does not provide any sort
+of implementation yet. </p>
+<h5 id="3-can-interfaces-provide-implementations-for-methods">3. Can interfaces provide implementations for methods?</h5>
+<p>Yes, but only for static methods.</p>
+<h5 id="4-can-interfaces-have-variables">4. Can interfaces have variables?</h5>
+<p>No interfaces do not have variables.</p>
+<h5 id="5-how-do-interfaces-and-abstract-classes-differ-methods-variables-visibility-etc">5. how do interfaces and abstract classes differ (methods, variables, visibility, etc.)?</h5>
+<p>In contrary to interfaces, abstract classes can both define variables and
+already define implementations for methods.</p>
+<h5 id="6-what-does-the-keyword-final-mean-in-relation-to-variables-and-methods">6. What does the <em>keyword</em> final mean in relation to variables and methods?</h5>
+<p>Final in the context of variables means, that they have to be defined in the
+constructor and can not be changed afterwards. </p>
+<p>Final in the context of methods means, that they can be overridden in
+subclasses.</p>
+<h3 id="2-analyze-the-uml-diagram">2. Analyze the UML diagram</h3>
+<img src="/oom-and-oop/exercise05/uml-task2.png" alt="" width="60%" style="margin-left: auto;margin-right: auto;display: block;">
+<table><thead><tr><th></th><th align="center">+meth1()</th><th align="center">+meth2()</th><th align="center">+meth3()</th><th align="center">+meth4()</th><th align="center"><u>methStat4()</u></th></tr></thead><tbody>
+<tr><td>+attPub1</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>-attPriv1</td><td align="center">+</td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+<tr><td>#attProt1</td><td align="center">+</td><td align="center">+</td><td align="center"></td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>~attPack1</td><td align="center">+</td><td align="center">+</td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+<tr><td>+attPub2</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>-attPriv2</td><td align="center"></td><td align="center">+</td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+<tr><td>#attProt2</td><td align="center">+</td><td align="center">+</td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+<tr><td>~attPack2</td><td align="center">+</td><td align="center">+</td><td align="center"></td><td align="center"></td><td align="center"></td></tr>
+<tr><td>~attPubStat3</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td></tr>
+<tr><td>-attPriv3</td><td align="center"></td><td align="center"></td><td align="center">+</td><td align="center"></td><td align="center"></td></tr>
+<tr><td>#attProt3</td><td align="center"></td><td align="center"></td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>~attPack3</td><td align="center"></td><td align="center"></td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>+attPub4</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>-attPriv4</td><td align="center"></td><td align="center"></td><td align="center"></td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>#attProt4</td><td align="center">+</td><td align="center"></td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+<tr><td>~attPack4</td><td align="center"></td><td align="center"></td><td align="center">+</td><td align="center">+</td><td align="center"></td></tr>
+</tbody></table>
+<h3 id="task-3">Task 3</h3>
+<p>Given are the following, very simplified concepts of a scanner and a printer.</p>
+<img src="/oom-and-oop/exercise05/uml-task3.png" alt="" width="80%" style="margin-left: auto;margin-right: auto;display: block;">
+<p>Implement the interfaces shown above. Alternatively, the interfaces can be can
+also be generated from the respective implementation classes (see below).</p>
+<p>Write a suitable implementation class that implements the respective interface
+and extends the class Hardware of the previous exercise sheets.</p>
+<p>A scanner works with an internal instance variable numOfScans, which counts the
+number of scans performed. If the <code>scan()</code> method is called, this variable is
+incremented by one. With <code>reset()</code> it is reset to zero.</p>
+<p>A printer works in a similar way with the internal instance variables inkLevel
+and numOfPrints. If the method <code>print()</code> is called, inkLevel is decreased by one
+and <code>numOfPrints</code> is increased by one. With <code>reset()</code> <code>numOfPrints</code> is reset to
+zero, <code>inkLevel</code> is not affected, it is set if necessary with the corresponding
+setter-method if necessary.</p>
+<p>Don't forget to override the method <code>getInfo()</code>, so that analogous to the
+previous exercise sheets, all information about a device is output.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Printer </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Hardware </span><span style="color:#b48ead;">implements </span><span style="color:#a3be8c;">PrinterI </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private int </span><span style="color:#343d46;">inkLevel;
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private int </span><span style="color:#343d46;">numOfPrints;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Printer</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">reset</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        numOfPrints </span><span>= </span><span style="color:#d08770;">0</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">print</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        inkLevel</span><span>--</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">        numOfPrints</span><span>++</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public int </span><span style="color:#8fa1b3;">getNumOfPrints</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> numOfPrints;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">setNumOfPrints</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">numOfPrints</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.numOfPrints </span><span>=</span><span style="color:#343d46;"> numOfPrints;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public int </span><span style="color:#8fa1b3;">getInkLevel</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> inkLevel;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">setInkLevel</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">inkLevel</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.inkLevel </span><span>=</span><span style="color:#343d46;"> inkLevel;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">{ inkLevel: %d, numOfPrints: %d }</span><span>&quot;</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">formatted</span><span style="color:#343d46;">(inkLevel, numOfPrints);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Scanner </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Hardware </span><span style="color:#b48ead;">implements </span><span style="color:#a3be8c;">ScannerI </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private int </span><span style="color:#343d46;">numOfScans;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Scanner</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">reset</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        numOfScans </span><span>= </span><span style="color:#d08770;">0</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">scan</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        numOfScans</span><span>++</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public int </span><span style="color:#8fa1b3;">getNumOfScans</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> numOfScans;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">setNumOfScans</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">numOfScans</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.numOfScans </span><span>=</span><span style="color:#343d46;"> numOfScans;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">{ numOfScans: %d }</span><span>&quot;</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">formatted</span><span style="color:#343d46;">(numOfScans);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h3 id="task-4">Task 4</h3>
+<p>Based on Task 3, implement a <code>Copier</code> class that is both a scanner and a
+printer. So you have to use both interfaces (<code>ScannerI</code> and <code>PrinterI</code>) must be
+implemented by the class. Do not forget that you can also extend a suitable
+superclass.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Copier </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">Printer </span><span style="color:#b48ead;">implements </span><span style="color:#a3be8c;">ScannerI</span><span style="color:#343d46;">, </span><span style="color:#a3be8c;">PrinterI </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private int </span><span style="color:#343d46;">numOfScans;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Copier</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">super</span><span style="color:#343d46;">(id, name);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">scan</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        numOfScans</span><span>++</span><span style="color:#343d46;">;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public int </span><span style="color:#8fa1b3;">getNumOfScans</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> numOfScans;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">setNumOfScans</span><span style="color:#343d46;">(</span><span style="color:#b48ead;">int </span><span style="color:#bf616a;">numOfScans</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.numOfScans </span><span>=</span><span style="color:#343d46;"> numOfScans;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    @</span><span style="color:#bf616a;">Override
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">{ inkLevel: %d, numOfPrints: %d, numOfScans: %d }</span><span>&quot;
+</span><span style="color:#343d46;">                .</span><span style="color:#bf616a;">formatted</span><span style="color:#343d46;">(</span><span style="color:#bf616a;">getInkLevel</span><span style="color:#343d46;">(), </span><span style="color:#bf616a;">getNumOfPrints</span><span style="color:#343d46;">(), </span><span style="color:#bf616a;">getNumOfScans</span><span style="color:#343d46;">());
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

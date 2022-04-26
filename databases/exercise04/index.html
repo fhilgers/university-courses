@@ -1,0 +1,517 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 04 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases" checked />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+              
+                
+                
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise04/#1-translate-class-diagram-1-into-a-relational-model">1. Translate class diagram 1 into a relational model</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise04/#2-translate-class-diagram-2-into-a-relational-model">2. Translate class diagram 2 into a relational model</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise04/#3-translate-class-diagram-3-into-a-relational-model">3. Translate class diagram 3 into a relational model</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/databases/exercise04/#a-floor-strategy">a) Floor Strategy</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/databases/exercise04/#b-ceiling-strategy">b) Ceiling Strategy</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/databases/exercise04/#c-cohesion-strategy">c) Cohesion Strategy</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise04/#4-show-the-results-oft-the-operations-in-tabular-form">4. Show the results oft the operations in tabular form</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise04/#5-formulate-the-queries-from-4-in-tuple-calculus">5. Formulate the queries from 4 in Tuple calculus.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise04/#6-formulate-the-queries-from-4-in-sql">6. Formulate the queries from 4 in SQL.</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming"  />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-translate-class-diagram-1-into-a-relational-model">1. Translate class diagram 1 into a relational model</h3>
+<p>Given the following UML class diagram 1:</p>
+<p><strong>Translate class diagram 1 into a relational model. Use the rules that you have
+seen in the lecture. Highlight primary keys (underlined) and foreign keys 
+(italics).</strong></p>
+<ul>
+<li>Director(<u>DirID</u>, DirFirstName, DirLastName)</li>
+<li>Film(<u>FilmID</u>, Title, Year, Country, <em>DirID</em>)</li>
+<li>Actor(<u>ActorID</u>, FirstName, LastName, Birthdate, Birthplace)</li>
+<li>Plays_in(<u>Role, isMain, <em>FilmID</em>, <em>ActorID</em></u>)</li>
+</ul>
+<h3 id="2-translate-class-diagram-2-into-a-relational-model">2. Translate class diagram 2 into a relational model</h3>
+<p>Given the following UML class diagram 2:</p>
+<p><strong>Translate class diagram 2 into a relational model. Use the rules that you have
+seen in the lecture. Highlight primary keys (underlined) and foreign keys 
+(italics).</strong></p>
+<ul>
+<li>Pharmacy(<u>PharmacyID</u>, PharmacyName, PharmacyAddress, PharmacyPhone)</li>
+<li>TestStation(<u>StationID</u>, StationName, Address, <em>PharmacyID</em>)</li>
+<li>CoronaTest(<u>TestID</u>, Type, Result, Timestamp)</li>
+<li>Patient(<u>SVNR</u>, FirstName, LastName, Birthdate, PatientAddress, 
+PatientPhone, PatientEmail)</li>
+<li>takes(<u><em>StationID</em>, <em>TestID</em>, <em>SVNR</em></u>)</li>
+</ul>
+<h3 id="3-translate-class-diagram-3-into-a-relational-model">3. Translate class diagram 3 into a relational model</h3>
+<h4 id="a-floor-strategy">a) Floor Strategy</h4>
+<ul>
+<li>Mobile(<u>IMEI</u>, BrandName, ModelName, Year, 
+Memory, Carrier)</li>
+<li>Laptop(<u>IMEI</u>, BrandName, ModelName, Year, 
+CPU, RAM, Storage, ScreenSize)</li>
+<li>SmartSpeaker(<u>IMEI</u>, BrandName, ModelName, Year, 
+Color)</li>
+<li>Reparation(<u>ReparationID</u>, Date, Price, <em>IMEI</em>)</li>
+</ul>
+<h4 id="b-ceiling-strategy">b) Ceiling Strategy</h4>
+<p>Type refers to either Mobile, Laptop or Smartspeaker.</p>
+<ul>
+<li>Device(<u>IMEI</u>, BrandName, ModelName, Year, 
+Memory, Carrier,
+CPU, RAM, Storage, ScreenSize,
+Color,
+type)</li>
+<li>Reparation(<u>ReparationID</u>, Date, Price, <em>IMEI</em>)</li>
+</ul>
+<h4 id="c-cohesion-strategy">c) Cohesion Strategy</h4>
+<ul>
+<li>Device(<u>IMEI</u>, BrandName, ModelName, Year)</li>
+<li>Mobile(<u>Memory, Carrier, <em>IMEI</em></u>)</li>
+<li>Laptop(<u>CPU, RAM, Storage, ScreenSize, <em>IMEI</em></u>)</li>
+<li>SmartSpeaker(<u>Color, <em>IMEI</em></u>)</li>
+<li>Reparation(<u>ReparationID</u>, Date, Price, <em>IMEI</em>)</li>
+</ul>
+<h3 id="4-show-the-results-oft-the-operations-in-tabular-form">4. Show the results oft the operations in tabular form</h3>
+<p><strong>Film:</strong></p>
+<table><thead><tr><th align="center">ID</th><th align="left">Titel</th><th align="left">Regisseur</th></tr></thead><tbody>
+<tr><td align="center">21201</td><td align="left">The dark knight</td><td align="left">Christopher Nolan</td></tr>
+<tr><td align="center">21202</td><td align="left">Isle of dogs</td><td align="left">Wes Anderson</td></tr>
+<tr><td align="center">21203</td><td align="left">In the mood for love</td><td align="left">Wong Kar-wai</td></tr>
+<tr><td align="center">22341</td><td align="left">The lord of the rings</td><td align="left">Peter Jackson</td></tr>
+<tr><td align="center">22342</td><td align="left">Inception</td><td align="left">Christopher Nolan</td></tr>
+<tr><td align="center">22965</td><td align="left">Memento</td><td align="left">Chritopher Nolan</td></tr>
+<tr><td align="center">23546</td><td align="left">Hong Kong Express</td><td align="left">Wong Kar-wai</td></tr>
+<tr><td align="center">26545</td><td align="left">The Grandmaster</td><td align="left">Wong Kar-wai</td></tr>
+<tr><td align="center">26546</td><td align="left">Fantastic Mr. Fox</td><td align="left">Wes Anderson</td></tr>
+</tbody></table>
+<p><strong>Bietet:</strong></p>
+<table><thead><tr><th align="center">ID</th><th align="center">PlattformID</th></tr></thead><tbody>
+<tr><td align="center">21201</td><td align="center">P2</td></tr>
+<tr><td align="center">21202</td><td align="center">P1</td></tr>
+<tr><td align="center">21203</td><td align="center">P1</td></tr>
+<tr><td align="center">22341</td><td align="center">P3</td></tr>
+<tr><td align="center">22342</td><td align="center">P1</td></tr>
+<tr><td align="center">22965</td><td align="center">P2</td></tr>
+<tr><td align="center">23546</td><td align="center">P2</td></tr>
+<tr><td align="center">26545</td><td align="center">P3</td></tr>
+<tr><td align="center">26546</td><td align="center">P2</td></tr>
+<tr><td align="center">21201</td><td align="center">P3</td></tr>
+<tr><td align="center">21202</td><td align="center">P2</td></tr>
+<tr><td align="center">21203</td><td align="center">P3</td></tr>
+<tr><td align="center">22341</td><td align="center">P1</td></tr>
+<tr><td align="center">22342</td><td align="center">P2</td></tr>
+</tbody></table>
+<p><strong>Plattform:</strong></p>
+<table><thead><tr><th align="center">PlattformID</th><th align="left">Name</th><th align="center">PreisProMonat</th></tr></thead><tbody>
+<tr><td align="center">P1</td><td align="left">Netflix</td><td align="center">9.99</td></tr>
+<tr><td align="center">P2</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+<tr><td align="center">P3</td><td align="left">Disney+</td><td align="center">9.99</td></tr>
+</tbody></table>
+<p>a) <script type="math/tex">\sigma_{\text{PreisProMonat}=7.99}(\text{Plattform})</script>
+ </p>
+<table><thead><tr><th align="center">PlatformID</th><th align="left">Name</th><th align="center">PreisProMonat</th></tr></thead><tbody>
+<tr><td align="center">P2</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+</tbody></table>
+<p>b) <script type="math/tex">\sigma_{\text{Regisseur}='\text{Wes Anderson}'}(\text{Plattform})</script>
+ </p>
+<table><thead><tr><th align="center">ID</th><th align="left">Titel</th><th align="left">Regisseur</th></tr></thead><tbody>
+<tr><td align="center">21202</td><td align="left">Isle of dogs</td><td align="left">Wes Anderson</td></tr>
+<tr><td align="center">26546</td><td align="left">Fantastic Mr. Fox</td><td align="left">Wes Anderson</td></tr>
+</tbody></table>
+<p>c) <script type="math/tex">\pi_{\text{Titel}}(\sigma_{\text{ID} > 23000}(\text{Film}))</script>
+</p>
+<table><thead><tr><th align="left">Titel</th></tr></thead><tbody>
+<tr><td align="left">Hong Kong Express</td></tr>
+<tr><td align="left">The Grandmaster</td></tr>
+<tr><td align="left">Fantastic Mr. Fox</td></tr>
+</tbody></table>
+<p>d) <script type="math/tex">\text{Film} \Join \text{Bietet}</script>
+</p>
+<table><thead><tr><th align="center">ID</th><th align="left">Titel</th><th align="left">Regisseur</th><th align="center">PlatformID</th></tr></thead><tbody>
+<tr><td align="center">21201</td><td align="left">The dark knight</td><td align="left">Christopher Nolan</td><td align="center">P2</td></tr>
+<tr><td align="center">21201</td><td align="left">The dark knight</td><td align="left">Christopher Nolan</td><td align="center">P3</td></tr>
+<tr><td align="center">21202</td><td align="left">Isle of dogs</td><td align="left">Wes Anderson</td><td align="center">P1</td></tr>
+<tr><td align="center">21202</td><td align="left">Isle of dogs</td><td align="left">Wes Anderson</td><td align="center">P2</td></tr>
+<tr><td align="center">21203</td><td align="left">In the mood for love</td><td align="left">Wong Kar-wai</td><td align="center">P1</td></tr>
+<tr><td align="center">21203</td><td align="left">In the mood for love</td><td align="left">Wong Kar-wai</td><td align="center">P3</td></tr>
+<tr><td align="center">22341</td><td align="left">The lord of the rings</td><td align="left">Peter Jackson</td><td align="center">P1</td></tr>
+<tr><td align="center">22341</td><td align="left">The lord of the rings</td><td align="left">Peter Jackson</td><td align="center">P3</td></tr>
+<tr><td align="center">22342</td><td align="left">Inception</td><td align="left">Christopher Nolan</td><td align="center">P1</td></tr>
+<tr><td align="center">22342</td><td align="left">Inception</td><td align="left">Christopher Nolan</td><td align="center">P2</td></tr>
+<tr><td align="center">22965</td><td align="left">Memento</td><td align="left">Chritopher Nolan</td><td align="center">P2</td></tr>
+<tr><td align="center">23546</td><td align="left">Hong Kong Express</td><td align="left">Wong Kar-wai</td><td align="center">P2</td></tr>
+<tr><td align="center">26545</td><td align="left">The Grandmaster</td><td align="left">Wong Kar-wai</td><td align="center">P3</td></tr>
+<tr><td align="center">26546</td><td align="left">Fantastic Mr. Fox</td><td align="left">Wes Anderson</td><td align="center">P2</td></tr>
+</tbody></table>
+<p>e) <script type="math/tex">\pi_{\text{Titel,Name,Preis}}((\text{Film} \Join \text{Bietet}) \Join \text{Platform})</script>
+</p>
+<table><thead><tr><th align="left">Titel</th><th align="left">Name</th><th align="center">PreisProMonat</th></tr></thead><tbody>
+<tr><td align="left">The dark knight</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+<tr><td align="left">The dark knight</td><td align="left">Disney+</td><td align="center">9.99</td></tr>
+<tr><td align="left">Isle of dogs</td><td align="left">Netflix</td><td align="center">9.99</td></tr>
+<tr><td align="left">Isle of dogs</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+<tr><td align="left">In the mood for love</td><td align="left">Netflix</td><td align="center">9.99</td></tr>
+<tr><td align="left">In the mood for love</td><td align="left">Disney+</td><td align="center">9.99</td></tr>
+<tr><td align="left">The lord of the rings</td><td align="left">Netflix</td><td align="center">9.99</td></tr>
+<tr><td align="left">The lord of the rings</td><td align="left">Disney+</td><td align="center">9.99</td></tr>
+<tr><td align="left">Inception</td><td align="left">Netflix</td><td align="center">9.99</td></tr>
+<tr><td align="left">Inception</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+<tr><td align="left">Memento</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+<tr><td align="left">Hong Kong Express</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+<tr><td align="left">The Grandmaster</td><td align="left">Disney+</td><td align="center">9.99</td></tr>
+<tr><td align="left">Fantastic Mr. Fox</td><td align="left">PrimeVideo</td><td align="center">7.99</td></tr>
+</tbody></table>
+<h3 id="5-formulate-the-queries-from-4-in-tuple-calculus">5. Formulate the queries from 4 in Tuple calculus.</h3>
+<p>a) <script type="math/tex">\sigma_{\text{PreisProMonat}=7.99}(\text{Plattform})</script>
+ </p>
+<script type="math/tex;mode=display">res = \{ t | t \in \text{Platform} \land t.\text{PreisProMonat} = 7.99 \}</script>
+<p>b) <script type="math/tex">\sigma_{\text{Regisseur}='\text{Wes Anderson}'}(\text{Plattform})</script>
+ </p>
+<script type="math/tex;mode=display">res = \{ t | t \in \text{Film} \land t.\text{Regisseur} = '\text{Wes Anderson}' \}</script>
+<p>c) <script type="math/tex">\pi_{\text{Titel}}(\sigma_{\text{ID} > 23000}(\text{Film}))</script>
+</p>
+<script type="math/tex;mode=display">\begin{align*}
+x   &= \{ t | t \in \text{Film} \land t.\text{ID} > 23000 \} \\
+res &= \{ s.\text{Titel} | s \in x \}
+\end{align*}</script>
+<p>d) <script type="math/tex">\text{Film} \Join \text{Bietet}</script>
+</p>
+<script type="math/tex;mode=display">res = \{ t | t.\text{ID} \in \text{Film} \land 
+             t.\text{ID} \in \text{Bietet} \land 
+             t.\text{ID} = t.\text{ID} \}</script>
+<p>e) <script type="math/tex">\pi_{\text{Titel,Name,Preis}}((\text{Film} \Join \text{Bietet}) \Join \text{Platform})</script>
+</p>
+<script type="math/tex;mode=display">\begin{align*}
+a   &= \{ t | t.\text{ID} \in \text{Film} \land 
+           t.\text{ID} \in \text{Bietet} \land 
+           t.\text{ID} = t.\text{ID} \} \\
+b   &= \{ t | t.\text{ID} \in a \land 
+           t.\text{ID} \in \text{Platform} \land 
+           t.\text{ID} = t.\text{ID} \} \\
+res &= \{ t.\text{Titel}, t.\text{Name}, t.\text{Preis} | t \in b \}
+\end{align*}</script>
+<h3 id="6-formulate-the-queries-from-4-in-sql">6. Formulate the queries from 4 in SQL.</h3>
+<p>a) <script type="math/tex">\sigma_{\text{PreisProMonat}=7.99}(\text{Plattform})</script>
+ </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#bf616a;">* </span><span style="color:#b48ead;">FROM</span><span> Platform </span><span style="color:#b48ead;">WHERE</span><span> PreisProMonat = </span><span style="color:#d08770;">7</span><span>.</span><span style="color:#d08770;">99
+</span></code></pre>
+<p>b) <script type="math/tex">\sigma_{\text{Regisseur}='\text{Wes Anderson}'}(\text{Plattform})</script>
+ </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#bf616a;">* </span><span style="color:#b48ead;">FROM</span><span> Film </span><span style="color:#b48ead;">WHERE</span><span> Regisseur = &quot;</span><span style="color:#a3be8c;">Wes Anderson</span><span>&quot;
+</span></code></pre>
+<p>c) <script type="math/tex">\pi_{\text{Titel}}(\sigma_{\text{ID} > 23000}(\text{Film}))</script>
+</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#d08770;">Film</span><span>.</span><span style="color:#d08770;">Titel </span><span style="color:#b48ead;">FROM</span><span> Film </span><span style="color:#b48ead;">WHERE</span><span> ID &gt; </span><span style="color:#d08770;">23000
+</span></code></pre>
+<p>d) <script type="math/tex">\text{Film} \Join \text{Bietet}</script>
+</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#bf616a;">* 
+</span><span style="color:#b48ead;">FROM</span><span> Film
+</span><span>FULL </span><span style="color:#b48ead;">JOIN</span><span> Bietet ON </span><span style="color:#d08770;">Film</span><span>.</span><span style="color:#d08770;">ID </span><span>= </span><span style="color:#d08770;">Bietet</span><span>.</span><span style="color:#d08770;">ID
+</span></code></pre>
+<p>e) <script type="math/tex">\pi_{\text{Titel,Name,Preis}}((\text{Film} \Join \text{Bietet}) \Join \text{Platform})</script>
+</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> Titel, Name, Preis
+</span><span style="color:#b48ead;">FROM</span><span> Film
+</span><span>    FULL </span><span style="color:#b48ead;">JOIN</span><span> Bietet ON </span><span style="color:#d08770;">Film</span><span>.</span><span style="color:#d08770;">ID </span><span>= </span><span style="color:#d08770;">Bietet</span><span>.</span><span style="color:#d08770;">ID
+</span><span>    FULL </span><span style="color:#b48ead;">JOIN</span><span> Platform ON </span><span style="color:#d08770;">Film</span><span>.</span><span style="color:#d08770;">ID </span><span>= </span><span style="color:#d08770;">Platform</span><span>.</span><span style="color:#d08770;">ID
+</span></code></pre>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

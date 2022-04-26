@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 03 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases" checked />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#1">1.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#2">2.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#3">3.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#4">4.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#5">5.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#6">6.</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise03/#7">7.</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming"  />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <p>A new database is to be developed for the WinDBö bakery to support sales, room
+and personnel management and marketing. Discussions were held with responsible
+persons and future users, and existing information systems were analyzed. The
+texts in the tasks summarize the most important requirements for the data to be
+stored as a result of the domain analysis. From this, model a semantic data
+model in the form of a UML diagram.</p>
+<h3 id="1">1.</h3>
+<p>The database to be developed should contain data on products that the WinDBö
+bakery produces itself (e.g. Easter Reindling) or purchases (marzipan
+confectionery). In any case, a product has a name and a category (e.g. bread,
+cake, pastry, confectionery). Furthermore, it must be possible to store the
+production price or the purchase price as well as the gross sales price for each
+product. It should also be possible to view the central warehouse stock for the
+product in the database. A product contains zero or more ingredients.
+Ingredients are only stored in the database if they are contained in at least
+one product. The name and allergens of the ingredients are known.</p>
+<img src="/databases/exercise03/1.svg" alt="" width="30%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="2">2.</h3>
+<p>WinDBö has several branches all over the country. For each branch, its address
+is to be stored in the database. Each branch has a unique branch number. In the
+branches the products are stored and sold in a certain quantity. For each sale,
+the date of sale and the invoice amount should be recorded. Each branch includes
+several rooms. Each room has a size in m2 and a purpose (e.g. sales, guest room,
+warehouse, production).</p>
+<img src="/databases/exercise03/2.svg" alt="" width="50%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="3">3.</h3>
+<p>A sale includes one or more products in a certain quantity or number, which
+represent individual sales items of the sale. A product can be sold more often,
+of course (if the stock allows it). Gift baskets are special products consisting
+of at least five or more other products. The sales price of a gift basket may
+differ from the sum of the sales prices of its components and therefore it must
+be stored separately in the DB. Also the weight of the gift basket and the
+number of products it contains must be recorded.</p>
+<img src="/databases/exercise03/3.svg" alt="" width="70%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="4">4.</h3>
+<p>A sale is always made by an employee of the store. The employee's employee
+number, first and last name, date of birth, home address (street, postal code,
+city) and gross salary are known. An employee can handle several sales, but some
+do not sell anything at all. This depends on the activity of the employee, which
+is also stored in the DB. Each employee has to perform exactly one specific
+activity. Each employee receives an employee card upon employment. An employee
+ID card is assigned to exactly one employee. The card number, authorization and
+expiration date are stored on the card. If an employee is deleted from the
+system, the employee ID card should also be deleted.</p>
+<img src="/databases/exercise03/4.svg" alt="" width="90%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="5">5.</h3>
+<p>Sometimes the customer of a sale is also known and should be saved. These
+regular customers have a customer card with a customer number and are credited
+with bonus points for each purchase, which should be stored. From regular
+customers, in any case, the unique customer number, the first and last name, the
+address and the date of birth is known. Sometimes also an e-mail, a Tel.Nr. and
+their consent to send the customer a newsletter is to be stored.</p>
+<img src="/databases/exercise03/5.svg" alt="" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="6">6.</h3>
+<p>Sometimes employees also receive a commission for the sales they make. An
+employee works in one branch at one time, but can also be employed by different
+branches over time. This temporal development is to be stored in the DB. At
+least one, but possibly several employees work in a branch. Employees can have
+superiors. Supervisors may have no employees or several employees. The bakery
+has company cell phones, from which the model and phone number must be stored.
+Some employees are provided with a company cell phone, but not all are. This
+should be managed with the help of the database.</p>
+<img src="/databases/exercise03/6.svg" alt="" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="7">7.</h3>
+<p>Provide 5 queries of interest to the bakery's marketing that can be answered
+based on their semantic data model of the bakery (e.g., which products of the
+category 'cake' were sold in store F in March 2022 in a quantity above 5
+pieces?).</p>
+<ul>
+<li>Total invoice amount of all sales with customers who want to get the
+newsletter.</li>
+<li>All branches in which the employee 'John Doe' has ever worked in and sold a
+product for which he got a commission.</li>
+<li>The names of all the supervisors who supervise employees which have an expired
+card.</li>
+<li>The average gross salary of employees with a company cellphone who have worked
+in at least 2 other branches before.</li>
+<li>The total quantity of products sold by all employees supervised by 'John Doe'.</li>
+</ul>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

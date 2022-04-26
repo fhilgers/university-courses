@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 02 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases"  />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming" checked />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#1-answer-the-following-questions">1. Answer the following Questions.</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#1-how-do-objects-and-classes-differ-and-how-do-they-relate-to-each-other">1. How do objects and classes differ and how do they relate to each other?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#2-how-do-variables-and-methods-differ-between-objects-and-classes">2. How do variables and methods differ between objects and classes?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#3-what-are-constructors-how-are-they-marked-and-what-are-they-used-for">3. What are constructors, how are they marked and what are they used for?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#4-what-is-the-usual-return-value-of-a-constructor">4. What is the usual return value of a constructor?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#5-does-each-class-have-a-constructor">5. Does each class have a constructor?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#6-what-is-the-meaning-of-null">6. What is the meaning of null?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#7-what-does-the-keyword-this-mean">7. What does the keyword this mean?</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#2-hardware-class">2. Hardware Class</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#3-pc-class">3. PC Class</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/oom-and-oop/exercise02/#4-extend-pc-class">4. Extend PC Class</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-answer-the-following-questions">1. Answer the following Questions.</h3>
+<h5 id="1-how-do-objects-and-classes-differ-and-how-do-they-relate-to-each-other">1. How do objects and classes differ and how do they relate to each other?</h5>
+<p>A class is a blueprint from which you create instances, objects are the 
+instances created from a class.</p>
+<h5 id="2-how-do-variables-and-methods-differ-between-objects-and-classes">2. How do variables and methods differ between objects and classes?</h5>
+<p>There is a difference between class variables and instance variables. Class
+variables are shared by all objects and can be accessed through the class 
+itself. Instance variables are unique for each instance of the class and can
+only be accessed from an instance of the class. Similar principles apply to
+methods. Static methods can be accessed through the class itself while others
+can only be called on objects.</p>
+<h5 id="3-what-are-constructors-how-are-they-marked-and-what-are-they-used-for">3. What are constructors, how are they marked and what are they used for?</h5>
+<p>Constructors are used to create a new object. They are marked through having 
+the same name as the class.</p>
+<h5 id="4-what-is-the-usual-return-value-of-a-constructor">4. What is the usual return value of a constructor?</h5>
+<p>The return value of a constructor is an object of the class.</p>
+<h5 id="5-does-each-class-have-a-constructor">5. Does each class have a constructor?</h5>
+<p>Yes, even if no constructor is declared explicitly, the class has a so called
+default constructor which takes no argument and returns a new object of the 
+class with all instance variables set to their respective default value.</p>
+<h5 id="6-what-is-the-meaning-of-null">6. What is the meaning of <code>null</code>?</h5>
+<p>The keyword <code>null</code> can be used for all complex data types to indicate that the
+variable does not refer to any object or array.</p>
+<h5 id="7-what-does-the-keyword-this-mean">7. What does the keyword <code>this</code> mean?</h5>
+<p>The <code>this</code> keyword is used to explicitly access instance variables of the 
+current object.</p>
+<h3 id="2-hardware-class">2. Hardware Class</h3>
+<ul>
+<li>
+<p><strong>1. Variables</strong></p>
+<p>Write a class Hardware, which represents a hardware part in a PC. The
+class should contain the following instance variables:</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">private </span><span style="color:#d08770;">String</span><span> id
+</span><span style="color:#b48ead;">private </span><span style="color:#d08770;">String</span><span> name
+</span></code></pre>
+</li>
+<li>
+<p><strong>2. Constructor</strong></p>
+<p>The class Hardware shall contain the following constructors and methods 
+respectively:</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#a7adba;">// Initialize the Variables
+</span><span style="color:#b48ead;">public </span><span style="color:#bf616a;">Hardware</span><span>(</span><span style="color:#d08770;">String</span><span> id, </span><span style="color:#d08770;">String</span><span> name)
+</span></code></pre>
+</li>
+<li>
+<p><strong>3. Getter Methods</strong></p>
+<p>Realize corresponding getter methods for the instance variables:</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">getId</span><span>()
+</span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">getName</span><span>()
+</span></code></pre>
+</li>
+</ul>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">package </span><span>at.omi.blatt2;
+</span><span>
+</span><span style="color:#b48ead;">public class </span><span style="color:#d08770;">Hardware </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private </span><span style="color:#d08770;">String </span><span style="color:#343d46;">id;
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private </span><span style="color:#d08770;">String </span><span style="color:#343d46;">name;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">Hardware</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.id </span><span>=</span><span style="color:#343d46;"> id;
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.name </span><span>=</span><span style="color:#343d46;"> name;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getId</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> id;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getName</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> name;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">name: </span><span>&quot; + </span><span style="color:#bf616a;">getName</span><span style="color:#343d46;">() </span><span>+ &quot;</span><span style="color:#a3be8c;">, id: </span><span>&quot; + </span><span style="color:#bf616a;">getId</span><span style="color:#343d46;">();
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h3 id="3-pc-class">3. PC Class</h3>
+<p>Realize a class PC, which contains the following instance variables and methods.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">package </span><span>at.omi.blatt2;
+</span><span>
+</span><span style="color:#b48ead;">import </span><span>java.util.</span><span style="color:#d08770;">ArrayList</span><span>;
+</span><span style="color:#b48ead;">import </span><span>java.util.</span><span style="color:#d08770;">Comparator</span><span>;
+</span><span style="color:#b48ead;">import </span><span>java.util.stream.</span><span style="color:#d08770;">Collectors</span><span>;
+</span><span>
+</span><span style="color:#b48ead;">public class </span><span style="color:#d08770;">PC </span><span style="color:#343d46;">{
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final </span><span style="color:#d08770;">String </span><span style="color:#343d46;">id;
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final </span><span style="color:#d08770;">String </span><span style="color:#343d46;">name;
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">private final </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Hardware</span><span style="color:#343d46;">&gt; hardwareParts;
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">PC</span><span style="color:#343d46;">(</span><span style="color:#d08770;">String </span><span style="color:#bf616a;">id</span><span style="color:#343d46;">, </span><span style="color:#d08770;">String </span><span style="color:#bf616a;">name</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.id </span><span>=</span><span style="color:#343d46;"> id;
+</span><span style="color:#343d46;">        </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.name </span><span>=</span><span style="color:#343d46;"> name;
+</span><span style="color:#343d46;">        hardwareParts </span><span>= </span><span style="color:#b48ead;">new </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;&gt;();
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getId</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> id;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getName</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> name;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">ArrayList</span><span style="color:#343d46;">&lt;</span><span style="color:#d08770;">Hardware</span><span style="color:#343d46;">&gt; </span><span style="color:#8fa1b3;">getHardwareParts</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return</span><span style="color:#343d46;"> hardwareParts;
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public boolean </span><span style="color:#8fa1b3;">addHardware</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Hardware </span><span style="color:#bf616a;">hardware</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.hardwareParts.</span><span style="color:#bf616a;">add</span><span style="color:#343d46;">(hardware);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public boolean </span><span style="color:#8fa1b3;">removeHardware</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Hardware </span><span style="color:#bf616a;">hardware</span><span style="color:#343d46;">) {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">this</span><span style="color:#343d46;">.hardwareParts.</span><span style="color:#bf616a;">remove</span><span style="color:#343d46;">(hardware);
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getHardwareInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">Hardware</span><span style="color:#96b5b4;">\n</span><span style="color:#a3be8c;">----------------</span><span style="color:#96b5b4;">\n</span><span>&quot;
+</span><span style="color:#343d46;">                </span><span>+ </span><span style="color:#bf616a;">getHardwareParts</span><span style="color:#343d46;">().</span><span style="color:#bf616a;">stream</span><span style="color:#343d46;">()
+</span><span style="color:#343d46;">                .</span><span style="color:#bf616a;">map</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Hardware</span><span style="color:#343d46;">::</span><span style="color:#bf616a;">getInfo</span><span style="color:#343d46;">)
+</span><span style="color:#343d46;">                .</span><span style="color:#bf616a;">collect</span><span style="color:#343d46;">(</span><span style="color:#d08770;">Collectors</span><span style="color:#343d46;">.</span><span style="color:#bf616a;">joining</span><span style="color:#343d46;">(</span><span>&quot;</span><span style="color:#96b5b4;">\n</span><span>&quot;</span><span style="color:#343d46;">));
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public </span><span style="color:#d08770;">String </span><span style="color:#8fa1b3;">getInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#b48ead;">return </span><span>&quot;</span><span style="color:#a3be8c;">PC</span><span style="color:#96b5b4;">\n</span><span style="color:#a3be8c;">----------------</span><span style="color:#96b5b4;">\n</span><span>&quot;
+</span><span style="color:#343d46;">                </span><span>+ &quot;</span><span style="color:#a3be8c;">name: </span><span>&quot; + </span><span style="color:#bf616a;">getName</span><span style="color:#343d46;">() </span><span>+ &quot;</span><span style="color:#a3be8c;">, id: </span><span>&quot; + </span><span style="color:#bf616a;">getId</span><span style="color:#343d46;">() </span><span>+ &quot;</span><span style="color:#96b5b4;">\n\n</span><span>&quot;
+</span><span style="color:#343d46;">                </span><span>+ </span><span style="color:#bf616a;">getHardwareInfo</span><span style="color:#343d46;">();
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">printPCInfo</span><span style="color:#343d46;">() {
+</span><span style="color:#343d46;">        </span><span style="color:#d08770;">System</span><span style="color:#343d46;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#343d46;">(</span><span style="color:#bf616a;">getInfo</span><span style="color:#343d46;">());
+</span><span style="color:#343d46;">    }
+</span><span style="color:#343d46;">
+</span><span style="color:#343d46;">}
+</span></code></pre>
+<h3 id="4-extend-pc-class">4. Extend PC Class</h3>
+<p>Write a method <code>public void printHardwareByName()</code> for the class PC. The method
+is to print the hardware parts of a PC in alphabetical order according to their
+name on the screen. The original ArrayList hardwareParts should not be changed.</p>
+<pre data-lang="java" style="background-color:#eff1f5;color:#4f5b66;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">public</span><span> void </span><span style="color:#bf616a;">printHardwareByName</span><span>() {
+</span><span>    </span><span style="color:#d08770;">String</span><span> hardwareString = </span><span style="color:#bf616a;">getHardwareParts</span><span>().</span><span style="color:#bf616a;">stream</span><span>()
+</span><span>	    .</span><span style="color:#bf616a;">sorted</span><span>(</span><span style="color:#d08770;">Comparator</span><span>.</span><span style="color:#bf616a;">comparing</span><span>(</span><span style="color:#d08770;">Hardware</span><span>::</span><span style="color:#bf616a;">getName</span><span>))
+</span><span>	    .</span><span style="color:#bf616a;">map</span><span>(</span><span style="color:#d08770;">Hardware</span><span>::</span><span style="color:#bf616a;">getInfo</span><span>)
+</span><span>	    .</span><span style="color:#bf616a;">collect</span><span>(</span><span style="color:#d08770;">Collectors</span><span>.</span><span style="color:#bf616a;">joining</span><span>(&quot;</span><span style="color:#96b5b4;">\n</span><span>&quot;));
+</span><span>
+</span><span>    </span><span style="color:#d08770;">System</span><span>.out.</span><span style="color:#bf616a;">println</span><span>(hardwareString);
+</span><span>}
+</span></code></pre>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

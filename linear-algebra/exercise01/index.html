@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 01 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra" checked />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+                  
+                  
+                
+                  
+                  
+                
+                  
+                  
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#1-solve-the-following-systems-of-linear-equations">1. Solve the following systems of linear equations</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#2-matrix-vector-multiplication">2. Matrix-Vector Multiplication</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#3-interpretation-of-matrix-vector-multiplication">3. Interpretation of Matrix-Vector Multiplication</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#4-magic-square">4. Magic Square</a>
+                  
+                  <ul>
+                    
+                      <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#a-what-is-the-value-of-this-sum">(a) What is the value of this sum?</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#b-formulate-the-sum-properties">(b) Formulate the sum properties.</a></li>
+                    
+                      <li><a href="https://courses.hilgers.dev/linear-algebra/exercise01/#c-complete-the-following-square-to-a-magic-square">(c) Complete the following square to a magic square</a></li>
+                    
+                  </ul>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases"  />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming"  />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-solve-the-following-systems-of-linear-equations">1. Solve the following systems of linear equations</h3>
+<p>(a)</p>
+<script type="math/tex;mode=display">\begin{align}
+  x_{1} + 3 x_{2} + 2 x_{3} &=  2  \tag{1} \\
+2 x_{1} + 6 x_{2} + 9 x_{3} &= -6  \tag{2} \\
+2 x_{1} + 8 x_{2} + 8 x_{3} &= -4  \tag{3} \\
+			           \notag  \\
+  x_{1} + 3 x_{2} + 2 x_{3} &=  2  \tag{1} \\
+          2 x_{2} + 4 x_{3} &= -8  \tag{3} \\
+	            5 x_{3} &= -10 \tag{2} \\
+                                   \notag  \\
+  x_{1} + 3 x_{2} + 2 x_{3} &=  2  \tag{1} \\
+            x_{2} + 2 x_{3} &= -4  \tag{3} \\
+	              x_{3} &= -2  \tag{2} \\
+                                   \notag  \\
+                      x_{1} &=  6  \notag  \\
+                      x_{2} &=  0  \notag  \\
+	              x_{3} &= -2  \notag  \\
+\end{align}</script>
+<p>(b)</p>
+<script type="math/tex;mode=display">\begin{align}
+   x_{1} + 2 x_{2} +   x_{3} &= 0 \tag{1} \\
+   x_{1} +   x_{2} - 2 x_{3} &= 0 \tag{2} \\
+-2 x_{1} - 3 x_{2} +   x_{3} &= 0 \tag{3} \\
+			          \notag  \\
+   x_{1} + 2 x_{2} +   x_{3} &= 0 \tag{1} \\
+         -   x_{2} - 3 x_{3} &= 0 \tag{2} \\
+	     x_{2} + 3 x_{3} &= 0 \tag{3} \\
+			          \notag  \\
+   x_{1} + 2 x_{2} +   x_{3} &= 0 \tag{1} \\
+	     x_{2} + 3 x_{3} &= 0 \tag{3} \\
+                           0 &= 0 \tag{2} \\
+			     	  \notag  \\
+                       x_{1} &=   5 x_{3} \notag \\
+	               x_{2} &= - 3 x_{3} \notag \\
+		       x_{3} &=     x_{3} \notag \\
+	        
+\end{align}</script>
+<h3 id="2-matrix-vector-multiplication">2. Matrix-Vector Multiplication</h3>
+<p>The coffee machine at the Institute of Mathematics can produce espresso, 
+cappuccino and cocoa. For an espresso, it requires 1 unit of water and 2 units
+of coffee. For a cappuccino it needs 2 units of water, 2 units of coffee and 1
+unit of milk. For a cocoa 1 unit of water, 2 units of milk, and 2 units of
+cocoa are needed.</p>
+<p>On Thursday, the exercise leaders drink 5 cups of espresso, 3 cups of
+cappuccino, and one cup of cocoa. Use matrix-vector multiplication to calculate
+how many units of coffee, cocoa, milk, and water need to be put into the
+vending machine in the morning on Thursday so that the instructors can get the
+drinks they want.</p>
+<script type="math/tex;mode=display">\left( \begin{array}{ccc}
+1 & 2 & 1 \\
+0 & 2 & 2 \\
+2 & 1 & 0 \\
+2 & 0 & 0 \\
+\end{array} \right) 
+\cdot 
+\left( \begin{array}{cl}
+1 & \text{(cocoa)}      \\
+3 & \text{(cappuccino)} \\
+5 & \text{(espresso)}   \\
+\end{array} \right)
+=
+\left( \begin{array}{cl}
+12 & \text{(water)}  \\
+16 & \text{(coffee)} \\
+ 5 & \text{(milk)}   \\
+ 2 & \text{(cocoa)}  \\
+\end{array} \right)</script>
+<h3 id="3-interpretation-of-matrix-vector-multiplication">3. Interpretation of Matrix-Vector Multiplication</h3>
+<p>A pizzeria produces <script type="math/tex">n</script>
+ types of pizza and uses 
+<script type="math/tex">m</script>
+ ingredients. For <script type="math/tex">1 \le i \le m</script>
+ and
+<script type="math/tex">1 \le j \le n</script>
+ let <script type="math/tex">a_{ij}</script>
+ be the
+quantity of ingredient <script type="math/tex">i</script>
+ used to make pizza
+<script type="math/tex">j</script>
+. For <script type="math/tex">1 \le j \le n</script>
+ let
+<script type="math/tex">x_{j}</script>
+ denote the number of pizzas of variety
+<script type="math/tex">j</script>
+ sold in a day. Let <script type="math/tex">A = (a_{ij})</script>
+ and
+<script type="math/tex">x = (x_{j})</script>
+.</p>
+<p><strong>Interpret the matrix-vector multiplication <script type="math/tex">Ax</script>
+ in this
+context.</strong></p>
+<p>The result of this multiplication is a vector of all ingedients and their
+quantities similar to the previous task to produce all the pizzas specified by
+<script type="math/tex">x_{j}</script>
+.</p>
+<h3 id="4-magic-square">4. Magic Square</h3>
+<p>A <script type="math/tex">3 \times 3</script>
+ square is called a magic square if each number
+from 1 to 9 occurs exactly once and the sum of each of the three rows, the sum
+of each of the three columns, and the sums of the two diagonals are equal.</p>
+<h4 id="a-what-is-the-value-of-this-sum">(a) What is the value of this sum?</h4>
+<p>The sum has to be 15. The reason for this is that the digits from 1 to 9 all
+summed up equals to 45. That means that the sum of three rows or columns added
+together has to amount to 45 which in return results in each row and column
+adding up to 15.</p>
+<h4 id="b-formulate-the-sum-properties">(b) Formulate the sum properties.</h4>
+<p>Formulate the sum properties regarding column, row and diagonal sums that a
+magic square must have, as a linear system of equations.</p>
+<script type="math/tex;mode=display">\left( \begin{array}{}
+1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 \\
+1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 \\
+0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 \\
+\end{array} \right) 
+\cdot 
+\left( \begin{array}{}
+a \\
+b \\
+c \\
+d \\
+e \\
+f \\
+g \\
+h \\ 
+i \\
+\end{array} \right)
+=
+\left( \begin{array}{}
+15 \\
+15 \\
+15 \\
+15 \\
+15 \\
+15 \\
+15 \\
+15 \\
+\end{array} \right)</script>
+<h4 id="c-complete-the-following-square-to-a-magic-square">(c) Complete the following square to a magic square</h4>
+<script type="math/tex;mode=display">\left[ \begin{array}{}
+8 & 3 & 4 \\
+1 & 5 & 9 \\
+6 & 7 & 2 \\
+\end{array} \right]</script>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>

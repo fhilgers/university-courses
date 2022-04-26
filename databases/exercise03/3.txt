@@ -1,0 +1,56 @@
+@startuml
+class Product {
+  <<PK>> String name
+  String category
+  int count
+  double productionPrice
+  double purchasePrice
+  double grossSalePrice
+}
+
+class GiftBasket {
+  double salePrice
+  double weight
+}
+
+class Ingredient {
+  <<PK>> String name
+}
+class Allergen {
+  <<PK>> String name
+}
+
+class Branch {
+  <<PK>> long number
+  String address
+}
+class Room {
+  double size
+  String purpose
+}
+
+class Quantity {
+  int quantity
+}
+
+class Sale {
+  Date date
+  double invoiceAmount
+}
+  
+Product "1..*" -- "*" Ingredient
+Ingredient "*" -- "*" Allergen
+
+Branch "*" -- "*" Product : stores >
+Branch "*" -- "1..*" Product : sells >
+
+Sale --|> Quantity
+
+(Branch, Product) .. Sale
+(Branch, Product) .. Quantity
+
+Branch "1" *-- "1..*" Room
+
+GiftBasket "*" --* "5..*" Product
+(GiftBasket, Product) .. Quantity
+@enduml

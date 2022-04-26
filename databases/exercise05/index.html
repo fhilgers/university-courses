@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> University Courses | Exercise 05 </title>
+
+  
+
+  
+    <link rel="stylesheet" href="https://courses.hilgers.dev/main.css">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+    
+  
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+    
+      <!-- The loading of KaTeX is deferred to speed up page rendering -->
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/mathtex-script-type.min.js" integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT" crossorigin="anonymous"></script>
+      
+        <!-- To automatically render math in text elements, include the auto-render extension: -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+      
+    
+  
+
+  
+</head>
+
+<body>
+
+  <main>
+
+    
+
+    <nav>
+      
+      <h1><a href="https:&#x2F;&#x2F;courses.hilgers.dev">University Courses</a></h1>
+      
+
+      
+
+      <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+      <div id="trees">
+        
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="linear-algebra"  />
+        <label class="tree-toggle-label" for="linear-algebra">Linear Algebra</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/linear-algebra/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="databases" checked />
+        <label class="tree-toggle-label" for="databases">Databases</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li class="active" >
+            <a href="https://courses.hilgers.dev/databases/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+
+              
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+                
+                
+              
+
+              
+              <ul id="toc">
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#1-import-database-with-sql-instructions">1. Import Database with sql instructions</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#2-create-uml-diagram-from-schema">2. Create UML diagram from schema</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#3-extend-the-database">3. Extend the database</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#4-sql-filtering-and-ordering">4. SQL Filtering and Ordering</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#5-sql-joining">5. SQL Joining</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#6-sql-grouping">6. SQL Grouping</a>
+                  
+                </li>
+                
+                <li><a href="https://courses.hilgers.dev/databases/exercise05/#7-sql-distinct">7. SQL Distinct</a>
+                  
+                </li>
+                
+              </ul>
+              
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/databases/exercise00/">Exercise 00</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="object-oriented-modelling-and-programming"  />
+        <label class="tree-toggle-label" for="object-oriented-modelling-and-programming">Object-Oriented Modelling and Programming</label>
+
+        <ul class="subtree">
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise03/">Exercise 03</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise01/">Exercise 01</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise04/">Exercise 04</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise02/">Exercise 02</a>
+          </li>
+
+          
+
+            
+          
+          
+          <li >
+            <a href="https://courses.hilgers.dev/oom-and-oop/exercise05/">Exercise 05</a>
+          </li>
+
+          
+
+            
+          
+          
+        </ul>
+        
+        
+
+
+        <input class="tree-toggle" type="checkbox" id="computer-architecture"  />
+        <label class="tree-toggle-label" for="computer-architecture">Computer Architecture</label>
+
+        <ul class="subtree">
+          
+          <div style="margin-left:1em;">
+            
+            <input class="tree-toggle" type="checkbox" id="exercise-01"  />
+            <label class="tree-toggle-label" for="exercise-01">
+              Exercise 01
+            </label>
+            <ul class="subtree">
+              
+              <li >
+                <a href="https://courses.hilgers.dev/computer-architecture/exercise01/twos-complement/">1. Two&#x27;s Complement</a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+        </ul>
+        
+      </div>
+    </nav>
+    
+
+    <article>
+
+      
+      <div id="on_right">
+        <span id="search-ico" class="ms-Icon--Search"></span>
+      </div>
+      <div class="search-container">
+        <input id="search" type="search" placeholder="Search as you type...">
+        <div class="search-results">
+          <div class="search-results__header"></div>
+          <ul class="search-results__items"></ul>
+        </div>
+      </div>
+      
+
+      <div id="wrap">
+         <h3 id="1-import-database-with-sql-instructions">1. Import Database with sql instructions</h3>
+<p>In the online course of the lecture you will find the file
+'dbschema-postgres.sql'. This file contains DDL and DML statements for the
+creation of the exercise database &quot;Friends&quot;. Download the file from the online
+course and execute it in your personal Postgres installation (see notes on the
+exercise environment in the online course of the lecture). Describe briefly
+which elements the file contains, which steps were necessary to create the
+friends database, and which problems you might have encountered.</p>
+<pre data-lang="bash" style="background-color:#eff1f5;color:#4f5b66;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#a7adba;">#!/bin/sh
+</span><span style="color:#bf616a;">iconv -f</span><span> latin1</span><span style="color:#bf616a;"> -t</span><span> utf8 dbschema-postgres.sql &gt; schema.sql
+</span><span style="color:#bf616a;">psql -U</span><span> postgres</span><span style="color:#bf616a;"> -c </span><span>&quot;</span><span style="color:#a3be8c;">CREATE DATABASE friends;</span><span>&quot;
+</span><span style="color:#bf616a;">psql -U</span><span> postgres friends</span><span style="color:#bf616a;"> -c </span><span>&quot;</span><span style="color:#a3be8c;">SET session_replication_role = &#39;replica&#39;;</span><span>&quot;</span><span style="color:#bf616a;"> -f</span><span> schema.sql
+</span></code></pre>
+<h3 id="2-create-uml-diagram-from-schema">2. Create UML diagram from schema</h3>
+<p>Create a UML class diagram for the &quot;Friends&quot; database schema.</p>
+<img src="/databases/exercise05/uml.svg" alt="" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
+<h3 id="3-extend-the-database">3. Extend the database</h3>
+<p>You need to extend your &quot;Friends&quot; database (using pgAdmin) with a table
+Geraet(GID, GName, status, email), in which data around devices used by people
+are stored. For attribute 'status' only the values 'aktiv' and 'passiv' should
+be allowed. No NULL values are allowed for any attribute. </p>
+<p>a) Write the necessary SQL DDL statements to create the table 'Geraet'. </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">CREATE TYPE </span><span>status AS </span><span style="color:#8fa1b3;">ENUM</span><span>(&#39;</span><span style="color:#a3be8c;">aktiv</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">passiv</span><span>&#39;);
+</span><span>
+</span><span style="color:#b48ead;">CREATE TABLE </span><span style="color:#8fa1b3;">geraet</span><span>(
+</span><span>GID </span><span style="color:#b48ead;">VARCHAR</span><span>(</span><span style="color:#d08770;">60</span><span>) </span><span style="color:#b48ead;">PRIMARY KEY </span><span>NOT </span><span style="color:#d08770;">NULL</span><span>,
+</span><span>GName </span><span style="color:#b48ead;">VARCHAR</span><span>(</span><span style="color:#d08770;">255</span><span>) NOT </span><span style="color:#d08770;">NULL</span><span>,
+</span><span>status status NOT </span><span style="color:#d08770;">NULL</span><span>,
+</span><span>email </span><span style="color:#b48ead;">VARCHAR</span><span>(</span><span style="color:#d08770;">60</span><span>) </span><span style="color:#b48ead;">references</span><span> person(email) NOT </span><span style="color:#d08770;">NULL
+</span><span>);
+</span></code></pre>
+<p>b) Insert at least 3 tuples in the table using the INSERT statements. </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">insert into</span><span> geraet(GID, GName, status, email) 
+</span><span style="color:#b48ead;">values</span><span> (
+</span><span>    &#39;</span><span style="color:#a3be8c;">158f789f-0142-4575-bf3f-68c1d933fa8b</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">testDevice01</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">aktiv</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">H.Mueller@yahoo.com</span><span>&#39;
+</span><span>);
+</span><span>
+</span><span style="color:#b48ead;">insert into</span><span> geraet(GID, GName, status, email) 
+</span><span style="color:#b48ead;">values</span><span> (
+</span><span>    &#39;</span><span style="color:#a3be8c;">145035cd-96fb-4e28-8896-e256f8a2de9c</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">testDevice02</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">aktiv</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">H.Mueller@yahoo.com</span><span>&#39;
+</span><span>);
+</span><span>
+</span><span style="color:#b48ead;">insert into</span><span> geraet(GID, GName, status, email) 
+</span><span style="color:#b48ead;">values</span><span> (
+</span><span>    &#39;</span><span style="color:#a3be8c;">d5760e45-626f-4cd2-9720-aae5b9e0b0cc</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">testDevice03</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">aktiv</span><span>&#39;,
+</span><span>    &#39;</span><span style="color:#a3be8c;">H.Mueller@yahoo.com</span><span>&#39;
+</span><span>);
+</span></code></pre>
+<p>c) Modify the status of a tuple in the table (e.g., from ‚aktiv' to ‚passiv'),
+using the UPDATE statement. What happens if you try to set a status to 
+'gesperrt'?</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">UPDATE</span><span> geraet
+</span><span style="color:#b48ead;">SET</span><span> status = &#39;</span><span style="color:#a3be8c;">passiv</span><span>&#39;
+</span><span style="color:#b48ead;">WHERE</span><span> gid = &#39;</span><span style="color:#a3be8c;">d5760e45-626f-4cd2-9720-aae5b9e0b0cc</span><span>&#39;
+</span><span>
+</span><span style="color:#b48ead;">UPDATE</span><span> geraet
+</span><span style="color:#b48ead;">SET</span><span> status = &#39;</span><span style="color:#a3be8c;">gesperrt</span><span>&#39;
+</span><span style="color:#b48ead;">WHERE</span><span> email = &#39;</span><span style="color:#a3be8c;">H.Mueller@yahoo.com</span><span>&#39;
+</span></code></pre>
+<h3 id="4-sql-filtering-and-ordering">4. SQL Filtering and Ordering</h3>
+<p>Write SQL queries for the &quot;Friends&quot; database schema, which provide the following
+results: </p>
+<p>a) All data of all persons.</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#bf616a;">* 
+</span><span style="color:#b48ead;">FROM</span><span> person
+</span></code></pre>
+<p>b) The birthdate, first and last name of all women, sorted alphabetically
+ascending on the last name.</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> vorname, nachname, geburtsdatum
+</span><span style="color:#b48ead;">FROM</span><span> person
+</span><span style="color:#b48ead;">WHERE</span><span> geschlecht = &#39;</span><span style="color:#a3be8c;">W</span><span>&#39;
+</span><span style="color:#b48ead;">ORDER BY</span><span> nachname </span><span style="color:#b48ead;">ASC
+</span></code></pre>
+<p>c) The birthdate of persons with first name 'Sophia' and last name 'Krüger'.</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> geburtsdatum 
+</span><span style="color:#b48ead;">FROM</span><span> person
+</span><span style="color:#b48ead;">WHERE</span><span> vorname = &#39;</span><span style="color:#a3be8c;">Sophia</span><span>&#39; AND nachname = &#39;</span><span style="color:#a3be8c;">Krüger</span><span>&#39;
+</span></code></pre>
+<h3 id="5-sql-joining">5. SQL Joining</h3>
+<p>Write SQL queries for the &quot;Friends&quot; database schema, which provide the following
+results: </p>
+<p>a) The title of all photos that belong to Sophia Krüger. </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> titel
+</span><span style="color:#b48ead;">FROM</span><span> person
+</span><span style="color:#b48ead;">JOIN</span><span> photo ON </span><span style="color:#d08770;">person</span><span>.</span><span style="color:#d08770;">email </span><span>= </span><span style="color:#d08770;">photo</span><span>.</span><span style="color:#d08770;">personemail 
+</span><span style="color:#b48ead;">WHERE</span><span> vorname = &#39;</span><span style="color:#a3be8c;">Sophia</span><span>&#39; AND nachname = &#39;</span><span style="color:#a3be8c;">Krüger</span><span>&#39;
+</span></code></pre>
+<p>b) The first and last name of members of the group 'Villach'. </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> vorname, nachname
+</span><span style="color:#b48ead;">FROM</span><span> istingruppe </span><span style="color:#b48ead;">JOIN</span><span> person 
+</span><span>  ON </span><span style="color:#d08770;">istingruppe</span><span>.</span><span style="color:#d08770;">email </span><span>= </span><span style="color:#d08770;">person</span><span>.</span><span style="color:#d08770;">email
+</span><span style="color:#b48ead;">WHERE </span><span style="color:#d08770;">istingruppe</span><span>.</span><span style="color:#d08770;">gruppename </span><span>= &#39;</span><span style="color:#a3be8c;">Villach</span><span>&#39;
+</span></code></pre>
+<p>c) The birthdate of persons with first name 'Sophia' and last name 'Krüger',
+and of persons with first name 'Lena' and last name 'Wagner'.</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> geburtsdatum
+</span><span style="color:#b48ead;">FROM</span><span> person
+</span><span style="color:#b48ead;">WHERE</span><span> (vorname = &#39;</span><span style="color:#a3be8c;">Sophia</span><span>&#39; AND nachname = &#39;</span><span style="color:#a3be8c;">Krüger</span><span>&#39;) 
+</span><span>OR (vorname = &#39;</span><span style="color:#a3be8c;">Lena</span><span>&#39; AND nachname = &#39;</span><span style="color:#a3be8c;">Wagner</span><span>&#39;)
+</span></code></pre>
+<h3 id="6-sql-grouping">6. SQL Grouping</h3>
+<p>Write SQL queries for the &quot;Friends&quot; database schema, which answer the following
+questions: </p>
+<p>a) What is the name of groups that have an owner? </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> name
+</span><span style="color:#b48ead;">FROM</span><span> gruppe
+</span><span style="color:#b48ead;">WHERE</span><span> emailowner IS NOT </span><span style="color:#d08770;">NULL
+</span></code></pre>
+<p>b) What are the first and last names of friends of Sophia Krüger? </p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">vorname</span><span>, </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">nachname
+</span><span style="color:#b48ead;">FROM</span><span> person 
+</span><span style="color:#b48ead;">JOIN</span><span> hatfreund ON </span><span style="color:#d08770;">person</span><span>.</span><span style="color:#d08770;">email </span><span>= </span><span style="color:#d08770;">hatfreund</span><span>.</span><span style="color:#d08770;">email
+</span><span style="color:#b48ead;">JOIN</span><span> person as p2 ON </span><span style="color:#d08770;">hatfreund</span><span>.</span><span style="color:#d08770;">emailfreund </span><span>= </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">email
+</span><span style="color:#b48ead;">WHERE </span><span style="color:#d08770;">person</span><span>.</span><span style="color:#d08770;">vorname </span><span>= &#39;</span><span style="color:#a3be8c;">Sophia</span><span>&#39; AND </span><span style="color:#d08770;">person</span><span>.</span><span style="color:#d08770;">nachname </span><span>= &#39;</span><span style="color:#a3be8c;">Krüger</span><span>&#39;
+</span></code></pre>
+<p>c) What are the first and last names of men who are members of both group 
+'Villach' and also group 'Klagenfurt'? Sort in ascending order on the last name.</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT</span><span> vorname, nachname
+</span><span style="color:#b48ead;">FROM</span><span> person p
+</span><span style="color:#b48ead;">JOIN</span><span> istingruppe i ON </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">email </span><span>= </span><span style="color:#d08770;">i</span><span>.</span><span style="color:#d08770;">email
+</span><span style="color:#b48ead;">WHERE </span><span style="color:#d08770;">i</span><span>.</span><span style="color:#d08770;">gruppename </span><span>IN (&#39;</span><span style="color:#a3be8c;">Villach</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">Klagenfurt</span><span>&#39;) AND </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">geschlecht </span><span>= &#39;</span><span style="color:#a3be8c;">M</span><span>&#39;
+</span><span style="color:#b48ead;">GROUP BY </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">email
+</span><span>HAVING </span><span style="color:#96b5b4;">COUNT</span><span>(DISTINCT </span><span style="color:#d08770;">i</span><span>.</span><span style="color:#d08770;">gruppename</span><span>) = </span><span style="color:#d08770;">2
+</span></code></pre>
+<h3 id="7-sql-distinct">7. SQL Distinct</h3>
+<p>Write SQL queries for the &quot;Friends&quot; database schema, which answer the following
+questions: </p>
+<p>a) How many groups are there that have an owner?</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#96b5b4;">COUNT</span><span>(</span><span style="color:#bf616a;">*</span><span>)
+</span><span style="color:#b48ead;">FROM</span><span> gruppe
+</span><span style="color:#b48ead;">WHERE</span><span> emailowner IS NOT </span><span style="color:#d08770;">NULL
+</span></code></pre>
+<p>b) What are the names of persons that are tagged in a photo that belongs to the
+person with the email address 'L.Wagner@gmx.net'?</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT </span><span style="color:#d08770;">pe</span><span>.</span><span style="color:#d08770;">vorname</span><span>, </span><span style="color:#d08770;">pe</span><span>.</span><span style="color:#d08770;">nachname
+</span><span style="color:#b48ead;">FROM</span><span> photo p
+</span><span style="color:#b48ead;">JOIN</span><span> istabgebildet i ON </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">url </span><span>= </span><span style="color:#d08770;">i</span><span>.</span><span style="color:#d08770;">photourl
+</span><span style="color:#b48ead;">JOIN</span><span> person pe ON </span><span style="color:#d08770;">i</span><span>.</span><span style="color:#d08770;">personemail </span><span>= </span><span style="color:#d08770;">pe</span><span>.</span><span style="color:#d08770;">email
+</span><span style="color:#b48ead;">WHERE </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">personemail </span><span>= &#39;</span><span style="color:#a3be8c;">L.Wagner@gmx.net</span><span>&#39;
+</span></code></pre>
+<p>c) What are the names of persons (without repetitions) that have sent a message
+to a person who is a friend of Timm Lang? Sort the result in ascending order on
+the last name and in ascending order on the first name.</p>
+<pre data-lang="sql" style="background-color:#eff1f5;color:#4f5b66;" class="language-sql "><code class="language-sql" data-lang="sql"><span style="color:#b48ead;">SELECT DISTINCT </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">vorname</span><span>, </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">nachname
+</span><span style="color:#b48ead;">FROM</span><span> person p
+</span><span>  </span><span style="color:#b48ead;">JOIN</span><span> hatfreund h ON </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">email </span><span>= </span><span style="color:#d08770;">h</span><span>.</span><span style="color:#d08770;">email
+</span><span>  </span><span style="color:#b48ead;">JOIN</span><span> nachricht n ON </span><span style="color:#d08770;">h</span><span>.</span><span style="color:#d08770;">emailfreund </span><span>= </span><span style="color:#d08770;">n</span><span>.</span><span style="color:#d08770;">anemail
+</span><span>  </span><span style="color:#b48ead;">JOIN</span><span> person p2 ON </span><span style="color:#d08770;">n</span><span>.</span><span style="color:#d08770;">vonemail </span><span>= </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">email
+</span><span style="color:#b48ead;">WHERE </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">vorname </span><span>= &#39;</span><span style="color:#a3be8c;">Timm</span><span>&#39; AND </span><span style="color:#d08770;">p</span><span>.</span><span style="color:#d08770;">nachname </span><span>= &#39;</span><span style="color:#a3be8c;">Lang</span><span>&#39;
+</span><span style="color:#b48ead;">ORDER BY </span><span style="color:#d08770;">p2</span><span>.</span><span style="color:#d08770;">vorname </span><span style="color:#b48ead;">ASC
+</span></code></pre>
+ 
+      </div>
+
+    </article>
+  </main>
+
+  
+  <script type="text/javascript" src="https://courses.hilgers.dev/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://courses.hilgers.dev/js.js" defer></script>
+  
+
+</body>
+
+</html>
